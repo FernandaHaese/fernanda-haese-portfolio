@@ -1,0 +1,93 @@
+{
+  "notFound": {
+    "title": "Project not found",
+    "description": "The project you're looking for doesn't exist.",
+    "back": "Back to portfolio"
+  },
+  "labels": {
+    "client": "CLIENT",
+    "role": "ROLE",
+    "timeline": "TIMELINE",
+    "deliverables": "DELIVERABLES",
+    "brief": "The Brief",
+    "research": "Research & Discovery",
+    "process": "Process",
+    "result": "Result",
+    "gallery": "Gallery"
+  },
+  "shared": {
+    "brief": "Clarifying the problem, the audience and the constraints before writing a single line of code — the brief keeps the whole team pointed at the same outcome.",
+    "research": "User interviews, competitive analysis and heuristic reviews surface the real jobs to be done and the biggest opportunities to differentiate the product.",
+    "process": {
+      "step1": {
+        "title": "Discover",
+        "description": "Stakeholder interviews, benchmarks and information architecture."
+      },
+      "step2": {
+        "title": "Design",
+        "description": "Wireframes, prototypes and a scalable design system in Figma."
+      },
+      "step3": {
+        "title": "Deliver",
+        "description": "Front-end implementation, QA, hand-off and continuous improvement."
+      }
+    },
+    "result": "The final product ships with measurable improvements to the metrics that mattered — usability scores, conversion and team velocity — and a design system the team can keep evolving."
+  },
+  "items": {
+    "financeDashboard": {
+      "title": "Finance Dashboard",
+      "shortDescription": "A financial management dashboard designed for small businesses.",
+      "fullDescription": "A comprehensive financial management dashboard tailored to small businesses, covering cash flow, invoicing and forecasting in a single, focused workspace.",
+      "client": "Confidential Client",
+      "role": "UX/UI Designer",
+      "timeline": "Jan – Feb 2026",
+      "deliverables": "Research, UX/UI, Prototype"
+    },
+    "travelApp": {
+      "title": "Travel Planner App",
+      "shortDescription": "Mobile-first app for planning multi-city trips with friends.",
+      "fullDescription": "A mobile-first travel planner that lets small groups build a shared itinerary, split expenses and keep every booking in one place.",
+      "client": "Personal project",
+      "role": "UX/UI & Front-End",
+      "timeline": "Mar – Apr 2026",
+      "deliverables": "Research, UI, React prototype"
+    },
+    "brandSite": {
+      "title": "Brand Website",
+      "shortDescription": "An editorial brand site with a bold typographic system.",
+      "fullDescription": "A one-page brand website that leans on strong typography, tight grid and micro-interactions to communicate the studio's point of view.",
+      "client": "Studio Placeholder",
+      "role": "Web Design & Front-End",
+      "timeline": "Sep – Oct 2025",
+      "deliverables": "Design & Front-End"
+    },
+    "taskManager": {
+      "title": "Task Manager",
+      "shortDescription": "Full-stack task manager with realtime collaboration.",
+      "fullDescription": "A collaborative task manager built end-to-end in React, Node.js and Postgres, with realtime updates and a keyboard-first UX.",
+      "client": "Internal tool",
+      "role": "Full-Stack Developer",
+      "timeline": "Jun – Aug 2025",
+      "deliverables": "Product, UI & Full-Stack build"
+    },
+    "portfolioCms": {
+      "title": "Portfolio CMS",
+      "shortDescription": "A lightweight CMS for design portfolios.",
+      "fullDescription": "A lightweight CMS that lets designers publish case studies without touching code, with typed content models and an editor optimized for long-form writing.",
+      "client": "Personal project",
+      "role": "Back-End & Full-Stack",
+      "timeline": "Feb – May 2025",
+      "deliverables": "API, admin UI, deployment"
+    },
+    "landingPage": {
+      "title": "Product Landing Page",
+      "shortDescription": "High-converting landing page for a SaaS launch.",
+      "fullDescription": "A high-converting landing page for a SaaS launch — clear value proposition, social proof and a conversion-tuned form, all responsive and accessible.",
+      "client": "SaaS Placeholder",
+      "role": "Web Design",
+      "timeline": "Nov – Dec 2024",
+      "deliverables": "Design & Front-End"
+    }
+  }
+}

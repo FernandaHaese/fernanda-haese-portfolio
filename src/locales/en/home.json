@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Fernanda Haese | Designer & Front-End Developer",
+    "description": "Portfolio of Fernanda Haese — Digital Designer and Front-End Developer creating clean, accessible interfaces."
+  },
+  "hero": {
+    "greeting": "Hello! I'm",
+    "name": "Fernanda",
+    "role": "Designer & Developer",
+    "description": "I craft digital experiences that pair thoughtful design with solid front-end engineering, focused on clarity, accessibility and delight."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a Digital Designer with experience in UX/UI Design and Front-End development. I work on creating digital solutions from information research and structuring to interface design and implementation, combining visual design, user experience, and technologies such as React, JavaScript, HTML, and CSS."
+  },
+  "services": {
+    "title": "My Services",
+    "description": "From research and interface design to front-end implementation — I help teams ship products that feel effortless to use.",
+    "items": {
+      "uxui": {
+        "title": "UX/UI Design",
+        "description": "Research, wireframes, prototypes and polished interfaces backed by a scalable design system."
+      },
+      "webDesign": {
+        "title": "Web Design",
+        "description": "Editorial, brand-forward web pages that stay responsive, fast and accessible across devices."
+      },
+      "frontend": {
+        "title": "Front-End Development",
+        "description": "Componentized front-ends in React and TypeScript, with careful attention to detail and performance."
+      }
+    }
+  },
+  "recentWork": {
+    "title": "Recent Work"
+  },
+  "contact": {
+    "title": "Get in Touch!",
+    "description": "Have a project in mind or just want to say hi? Send a message and I'll get back to you shortly."
+  }
+}

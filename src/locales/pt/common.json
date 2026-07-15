@@ -1,0 +1,39 @@
+{
+  "brand": "Fernanda Haese",
+  "navigation": {
+    "home": "Início",
+    "portfolio": "Portfólio",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "buttons": {
+    "getInTouch": "Entre em Contato",
+    "myWork": "Meus Trabalhos",
+    "seeMore": "Ver mais +",
+    "downloadCV": "Baixar CV",
+    "details": "Detalhes",
+    "back": "Voltar",
+    "submit": "Enviar",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "language": {
+    "label": "Idioma",
+    "en": "English",
+    "pt": "Português"
+  },
+  "social": {
+    "behance": "Behance",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "rights": "© {{year}} Fernanda Haese. Todos os direitos reservados."
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "description": "A página que você procura não existe ou foi movida.",
+    "cta": "Voltar ao início"
+  },
+  "skip": "Pular para o conteúdo principal"
+}

@@ -61,7 +61,7 @@ export function MobileMenu({
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-y-0 right-0 z-50 w-[85%] max-w-sm bg-primary-foreground border-l-2 border-ink shadow-[var(--shadow-offset-lg)] flex flex-col overflow-y-auto"
+            className="fixed inset-y-0 right-0 z-50 w-[85%] max-w-sm bg-primary-foreground border-l-2 border-ink shadow-(--shadow-offset-log) flex flex-col overflow-y-auto"
           >
             <div className="flex items-center justify-between p-4 border-b-2 border-ink">
               <span className="font-extrabold text-lg">{t("brand")}</span>

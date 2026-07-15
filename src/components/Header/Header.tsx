@@ -21,7 +21,7 @@ export function Header() {
 
   return (
     <header className="w-full pt-4 sm:pt-6 px-4 sm:px-6">
-      <div className="mx-auto max-w-[var(--container-content)]">
+      <div className="mx-auto max-w-content">
         <div className="card-hard rounded-full flex items-center gap-4 px-4 sm:px-6 py-2.5 sm:py-3">
           <Link to="/" className="font-extrabold text-base sm:text-lg tracking-tight shrink-0">
             {t("brand")}

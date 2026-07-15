@@ -37,7 +37,7 @@ function About() {
     <div className="pb-8">
       {/* Header block */}
       <AnimatedSection className="px-4 sm:px-6 pt-10 sm:pt-16 pb-10">
-        <div className="mx-auto max-w-[var(--container-content)] grid gap-8 md:grid-cols-[1fr_auto] md:items-start">
+        <div className="mx-auto max-w-content grid gap-8 md:grid-cols-[1fr_auto] md:items-start">
           <div className="max-w-xl text-center md:text-left">
             <div className="flex flex-col items-center md:items-start">
               <SectionTitle as="h1">{t("about:title")}</SectionTitle>
@@ -68,17 +68,14 @@ function About() {
           </div>
           {/* Desktop photo right */}
           <div className="hidden md:block">
-            <div
-              className="card-hard bg-placeholder w-64 h-64"
-              aria-label={t("about:photoAlt")}
-            />
+            <div className="card-hard bg-placeholder w-64 h-64" aria-label={t("about:photoAlt")} />
           </div>
         </div>
       </AnimatedSection>
 
       {/* Skills & Tools */}
       <AnimatedSection className="px-4 sm:px-6 py-10">
-        <div className="mx-auto max-w-[var(--container-content)]">
+        <div className="mx-auto max-w-content">
           <SectionTitle as="h2">{t("about:skills.title")}</SectionTitle>
           {/* Desktop: two-column grid, source order (Development, Design, Tools, Language) */}
           <div className="mt-8 hidden md:grid grid-cols-2 gap-6">
@@ -97,7 +94,7 @@ function About() {
 
       {/* Experience */}
       <AnimatedSection className="px-4 sm:px-6 py-10">
-        <div className="mx-auto max-w-[var(--container-content)]">
+        <div className="mx-auto max-w-content">
           <SectionTitle as="h2">{t("about:experience.title")}</SectionTitle>
           <div className="mt-8 flex flex-col gap-5">
             {experience.map((item) => {
@@ -127,7 +124,7 @@ function About() {
 
       {/* Education */}
       <AnimatedSection className="px-4 sm:px-6 py-10">
-        <div className="mx-auto max-w-[var(--container-content)]">
+        <div className="mx-auto max-w-content">
           <SectionTitle as="h2">{t("about:education.title")}</SectionTitle>
           <div className="mt-8 flex flex-col gap-5">
             {education.map((item) => {

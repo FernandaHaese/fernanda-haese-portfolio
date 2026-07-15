@@ -28,14 +28,12 @@ function Portfolio() {
   const [filter, setFilter] = useState<"all" | ProjectCategory>("all");
   const [visible, setVisible] = useState(6);
 
-  const filtered = projects.filter(
-    (p) => filter === "all" || p.categories.includes(filter),
-  );
+  const filtered = projects.filter((p) => filter === "all" || p.categories.includes(filter));
   const shown = filtered.slice(0, visible);
 
   return (
     <div className="pb-8 px-4 sm:px-6 pt-10 sm:pt-16">
-      <div className="mx-auto max-w-[var(--container-content)]">
+      <div className="mx-auto max-w-content">
         <div className="text-center">
           <SectionTitle as="h1" align="center" className="hidden sm:inline-block">
             {t("portfolio:titleDesktop")}
@@ -80,10 +78,7 @@ function Portfolio() {
           {shown.length === 0 ? (
             <p className="text-center text-muted-ink">{t("portfolio:empty")}</p>
           ) : (
-            <motion.div
-              layout
-              className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
-            >
+            <motion.div layout className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               <AnimatePresence mode="popLayout">
                 {shown.map((p) => (
                   <motion.div

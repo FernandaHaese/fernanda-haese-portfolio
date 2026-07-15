@@ -65,12 +65,12 @@ function Home() {
 
       {/* ABOUT (resumido) */}
       <AnimatedSection className="bg-card border-y-2 border-ink">
-        <div className="mx-auto max-w-[var(--container-content)] px-4 sm:px-6 py-14 sm:py-20 grid gap-10 md:grid-cols-[1fr_auto] md:items-center">
+        <div className="mx-auto max-w-content px-4 sm:px-6 py-14 sm:py-20 grid gap-10 md:grid-cols-[1fr_auto] md:items-center">
           <div className="max-w-xl">
-            <SectionTitle as="h2">{t("home:about.title", { defaultValue: "About Me" })}</SectionTitle>
-            <p className="mt-5 text-muted-ink leading-relaxed">
-              {t("home:about.description")}
-            </p>
+            <SectionTitle as="h2">
+              {t("home:about.title", { defaultValue: "About Me" })}
+            </SectionTitle>
+            <p className="mt-5 text-muted-ink leading-relaxed">{t("home:about.description")}</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href={siteConfig.cvPath}
@@ -97,7 +97,7 @@ function Home() {
 
       {/* SERVICES */}
       <AnimatedSection className="px-4 sm:px-6 py-14 sm:py-20">
-        <div className="mx-auto max-w-[var(--container-content)]">
+        <div className="mx-auto max-w-content">
           <div className="text-center max-w-2xl mx-auto">
             <SectionTitle as="h2" align="center">
               {t("home:services.title")}
@@ -122,7 +122,7 @@ function Home() {
 
       {/* RECENT WORK */}
       <AnimatedSection className="bg-card border-y-2 border-ink px-4 sm:px-6 py-14 sm:py-20">
-        <div className="mx-auto max-w-[var(--container-content)]">
+        <div className="mx-auto max-w-content">
           <div className="text-center">
             <SectionTitle as="h2" align="center">
               {t("home:recentWork.title")}

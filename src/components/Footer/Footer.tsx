@@ -14,7 +14,7 @@ export function Footer() {
   const { t } = useTranslation("common");
   return (
     <footer className="mt-16 sm:mt-24 bg-card border-t-2 border-ink">
-      <div className="mx-auto max-w-[var(--container-content)] px-4 sm:px-6 py-8 sm:py-10">
+      <div className="mx-auto max-w-content px-4 sm:px-6 py-8 sm:py-10">
         <div className="hidden md:grid grid-cols-3 items-center gap-6">
           <div className="font-extrabold text-lg">{t("brand")}</div>
           <nav className="flex items-center justify-center gap-6" aria-label="Footer">

@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title": "Sobre | Fernanda Haese",
+    "description": "Conheça mais sobre Fernanda Haese, suas habilidades, ferramentas, experiência e formação."
+  },
+  "title": "Sobre Mim",
+  "description": "Sou Designer Digital com experiência em UX/UI Design e desenvolvimento Front-End. Trabalho criando soluções digitais desde a pesquisa e estruturação da informação até o design e a implementação de interfaces, combinando design visual, experiência do usuário e tecnologias como React, JavaScript, HTML e CSS.",
+  "seeMore": "Ver mais +",
+  "skills": {
+    "title": "Habilidades & Ferramentas",
+    "groups": {
+      "development": "Desenvolvimento",
+      "design": "Design",
+      "tools": "Ferramentas",
+      "language": "Idiomas"
+    }
+  },
+  "experience": {
+    "title": "Experiência",
+    "items": {
+      "frontendDev": {
+        "role": "Desenvolvedora Front-End",
+        "company": "Programa Bolsa Futuro Digital | Prefeitura de Niterói",
+        "description": "Participação no desenvolvimento da plataforma do programa Brotaí, atuando desde o levantamento de requisitos até a implementação da solução, incluindo modelagem de dados, criação de interfaces com foco em UX/UI, desenvolvimento front-end (React, TypeScript, HTML e CSS) e back-end (Node.js, Prisma ORM e SQLite), além de testes, validação e melhoria contínua do produto."
+      },
+      "digitalDesigner": {
+        "role": "Designer Digital",
+        "company": "Autônoma",
+        "description": "Desenvolvimento de projetos de design digital para diferentes segmentos, incluindo sites, interfaces, identidades visuais e materiais de comunicação, atuando do levantamento de requisitos à entrega final, com foco em UX/UI, organização da informação, design visual, gestão de projetos e relacionamento com clientes."
+      }
+    }
+  },
+  "education": {
+    "title": "Formação",
+    "items": {
+      "react": {
+        "course": "Desenvolvimento Front-End com React",
+        "institution": "Programa Bolsa Futuro Digital | MCTI e Softex"
+      },
+      "fiap": {
+        "course": "Tecnólogo em Design Digital",
+        "institution": "Faculdade de Informática e Administração Paulista (FIAP)"
+      },
+      "ifes": {
+        "course": "Programação Básica de Aplicações Web",
+        "institution": "Instituto Federal do Espírito Santo (IFES)"
+      },
+      "googleUx": {
+        "course": "Certificado Profissional Google UX Design",
+        "institution": "Google | Coursera"
+      },
+      "cs50": {
+        "course": "CS50: Introdução à Ciência da Computação",
+        "institution": "Universidade de Harvard | Coursera"
+      }
+    }
+  },
+  "photoAlt": "Retrato de Fernanda Haese"
+}

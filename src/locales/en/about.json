@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title": "About | Fernanda Haese",
+    "description": "Learn more about Fernanda Haese, her skills, tools, experience and education."
+  },
+  "title": "About Me",
+  "description": "I am a Digital Designer with experience in UX/UI Design and Front-End development. I work on creating digital solutions from information research and structuring to interface design and implementation, combining visual design, user experience, and technologies such as React, JavaScript, HTML, and CSS.",
+  "seeMore": "See more +",
+  "skills": {
+    "title": "Skills & Tools",
+    "groups": {
+      "development": "Development",
+      "design": "Design",
+      "tools": "Tools",
+      "language": "Language"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "items": {
+      "frontendDev": {
+        "role": "Front-End Developer",
+        "company": "Programa Bolsa Futuro Digital | Prefeitura de Niterói",
+        "description": "Participation in the development of the Brotaí program platform, working from requirements gathering to solution implementation, including data modeling, creation of interfaces focused on UX/UI, front-end development (React, TypeScript, HTML and CSS) and back-end development (Node.js, Prisma ORM and SQLite), as well as testing, validation and continuous product improvement."
+      },
+      "digitalDesigner": {
+        "role": "Digital Designer",
+        "company": "Autonomous",
+        "description": "Development of digital design projects for different segments, including websites, interfaces, visual identities and communication materials, working from requirements gathering to final delivery, focusing on UX/UI, information organization, visual design, project management and client relations."
+      }
+    }
+  },
+  "education": {
+    "title": "Education",
+    "items": {
+      "react": {
+        "course": "Front-End Development with React",
+        "institution": "Digital Future Scholarship Program | MCTI and Softex"
+      },
+      "fiap": {
+        "course": "Digital Design Technologist",
+        "institution": "Paulista Faculty of Informatics and Administration (FIAP)"
+      },
+      "ifes": {
+        "course": "Basic Web Application Programming",
+        "institution": "Federal Institute of Espírito Santo (IFES)"
+      },
+      "googleUx": {
+        "course": "Google UX Design Professional Certificate",
+        "institution": "Google | Coursera"
+      },
+      "cs50": {
+        "course": "CS50: Introduction to Computer Science",
+        "institution": "Harvard University | Coursera"
+      }
+    }
+  },
+  "photoAlt": "Portrait of Fernanda Haese"
+}

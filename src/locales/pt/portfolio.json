@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Portfólio | Fernanda Haese",
+    "description": "Projetos selecionados em UX/UI, Web Design e desenvolvimento Front-End."
+  },
+  "titleDesktop": "Meu Portfólio",
+  "titleMobile": "Trabalhos Recentes",
+  "filters": {
+    "all": "Todos",
+    "ux-ui": "UX/UI",
+    "web-design": "Web Design",
+    "front-end": "Front-End",
+    "back-end": "Back-end",
+    "full-stack": "Full-Stack"
+  },
+  "empty": "Nenhum projeto para este filtro ainda.",
+  "seeMore": "Ver mais +"
+}

@@ -1,0 +1,93 @@
+{
+  "notFound": {
+    "title": "Projeto não encontrado",
+    "description": "O projeto que você procura não existe.",
+    "back": "Voltar ao portfólio"
+  },
+  "labels": {
+    "client": "CLIENTE",
+    "role": "FUNÇÃO",
+    "timeline": "PERÍODO",
+    "deliverables": "ENTREGÁVEIS",
+    "brief": "O Briefing",
+    "research": "Pesquisa & Descoberta",
+    "process": "Processo",
+    "result": "Resultado",
+    "gallery": "Galeria"
+  },
+  "shared": {
+    "brief": "Esclarecer o problema, o público e as restrições antes de escrever qualquer linha de código — o briefing mantém todo o time apontando para o mesmo resultado.",
+    "research": "Entrevistas com usuários, análise competitiva e revisões heurísticas revelam as reais tarefas a serem feitas e as maiores oportunidades de diferenciação.",
+    "process": {
+      "step1": {
+        "title": "Descobrir",
+        "description": "Entrevistas com stakeholders, benchmarks e arquitetura da informação."
+      },
+      "step2": {
+        "title": "Desenhar",
+        "description": "Wireframes, protótipos e um design system escalável no Figma."
+      },
+      "step3": {
+        "title": "Entregar",
+        "description": "Implementação front-end, QA, handoff e melhoria contínua."
+      }
+    },
+    "result": "O produto final é entregue com melhorias mensuráveis nas métricas que importam — usabilidade, conversão e velocidade do time — além de um design system que a equipe pode continuar evoluindo."
+  },
+  "items": {
+    "financeDashboard": {
+      "title": "Dashboard Financeiro",
+      "shortDescription": "Painel de gestão financeira desenhado para pequenas empresas.",
+      "fullDescription": "Painel financeiro completo pensado para pequenas empresas, cobrindo fluxo de caixa, faturamento e previsão em um único espaço focado.",
+      "client": "Cliente confidencial",
+      "role": "UX/UI Designer",
+      "timeline": "Jan – Fev 2026",
+      "deliverables": "Pesquisa, UX/UI, protótipo"
+    },
+    "travelApp": {
+      "title": "App de Viagens",
+      "shortDescription": "App mobile-first para planejar viagens em grupo.",
+      "fullDescription": "Um planejador de viagens mobile-first que permite a grupos pequenos montar um roteiro compartilhado, dividir despesas e centralizar todas as reservas.",
+      "client": "Projeto pessoal",
+      "role": "UX/UI & Front-End",
+      "timeline": "Mar – Abr 2026",
+      "deliverables": "Pesquisa, UI, protótipo React"
+    },
+    "brandSite": {
+      "title": "Site de Marca",
+      "shortDescription": "Site editorial com um sistema tipográfico marcante.",
+      "fullDescription": "Site one-page que se apoia em tipografia forte, grid preciso e micro-interações para comunicar o ponto de vista do estúdio.",
+      "client": "Estúdio Placeholder",
+      "role": "Web Design & Front-End",
+      "timeline": "Set – Out 2025",
+      "deliverables": "Design & Front-End"
+    },
+    "taskManager": {
+      "title": "Gerenciador de Tarefas",
+      "shortDescription": "Gerenciador full-stack com colaboração em tempo real.",
+      "fullDescription": "Gerenciador de tarefas colaborativo construído ponta a ponta em React, Node.js e Postgres, com atualizações em tempo real e UX keyboard-first.",
+      "client": "Ferramenta interna",
+      "role": "Desenvolvedora Full-Stack",
+      "timeline": "Jun – Ago 2025",
+      "deliverables": "Produto, UI e desenvolvimento full-stack"
+    },
+    "portfolioCms": {
+      "title": "CMS de Portfólio",
+      "shortDescription": "CMS leve para portfólios de designers.",
+      "fullDescription": "Um CMS leve que permite designers publicarem cases sem tocar em código, com modelos de conteúdo tipados e editor pensado para textos longos.",
+      "client": "Projeto pessoal",
+      "role": "Back-End & Full-Stack",
+      "timeline": "Fev – Mai 2025",
+      "deliverables": "API, painel admin, deploy"
+    },
+    "landingPage": {
+      "title": "Landing Page de Produto",
+      "shortDescription": "Landing page de alta conversão para lançamento de SaaS.",
+      "fullDescription": "Landing page de alta conversão para o lançamento de um SaaS — proposta de valor clara, prova social e formulário otimizado, tudo responsivo e acessível.",
+      "client": "SaaS Placeholder",
+      "role": "Web Design",
+      "timeline": "Nov – Dez 2024",
+      "deliverables": "Design & Front-End"
+    }
+  }
+}

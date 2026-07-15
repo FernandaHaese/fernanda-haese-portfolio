@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Contato | Fernanda Haese",
+    "description": "Entre em contato com Fernanda Haese para projetos de design e desenvolvimento front-end."
+  },
+  "title": "Entre em Contato!",
+  "description": "Tem um projeto em mente ou só quer dizer oi? Preencha o formulário abaixo e eu retorno em breve.",
+  "form": {
+    "name": "Nome",
+    "email": "E-mail",
+    "message": "Mensagem",
+    "submit": "Enviar",
+    "sending": "Enviando..."
+  },
+  "validation": {
+    "nameRequired": "Por favor, diga seu nome.",
+    "emailRequired": "Por favor, informe um e-mail.",
+    "emailInvalid": "Informe um e-mail válido.",
+    "messageRequired": "Por favor, escreva uma mensagem.",
+    "messageMin": "A mensagem deve ter ao menos 10 caracteres."
+  },
+  "status": {
+    "success": "Obrigada! Sua mensagem foi enviada.",
+    "error": "Algo deu errado. Tente novamente ou me envie um e-mail diretamente."
+  }
+}

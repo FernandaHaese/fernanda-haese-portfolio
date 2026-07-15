@@ -1,0 +1,1 @@
+export { SkillGroupCard } from "./SkillGroupCard";

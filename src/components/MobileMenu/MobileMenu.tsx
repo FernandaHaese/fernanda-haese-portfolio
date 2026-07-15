@@ -61,7 +61,7 @@ export function MobileMenu({
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-y-0 right-0 z-50 w-[85%] max-w-sm bg-cream border-l-2 border-ink shadow-[var(--shadow-offset-lg)] flex flex-col"
+            className="fixed inset-y-0 right-0 z-50 w-[85%] max-w-sm bg-primary-foreground border-l-2 border-ink shadow-[var(--shadow-offset-lg)] flex flex-col overflow-y-auto"
           >
             <div className="flex items-center justify-between p-4 border-b-2 border-ink">
               <span className="font-extrabold text-lg">{t("brand")}</span>
@@ -74,7 +74,7 @@ export function MobileMenu({
                 <X className="h-5 w-5" />
               </button>
             </div>
-            <nav className="flex-1 overflow-y-auto p-6">
+            <nav className="flex-1  p-6">
               <ul className="flex flex-col gap-2">
                 {NAV.map((item) => (
                   <li key={item.to}>
@@ -92,18 +92,16 @@ export function MobileMenu({
                   </li>
                 ))}
               </ul>
-
-              <div className="mt-8">
-                <p className="text-xs font-bold uppercase tracking-wider text-muted-ink mb-3">
-                  {t("language.label")}
-                </p>
-                <LanguageSelector variant="stacked" />
-              </div>
-
-              <div className="mt-8">
-                <SocialLinks />
-              </div>
             </nav>
+            <div className="p-6 border-t-2 border-ink">
+              <p className="text-xs font-bold uppercase tracking-wider text-muted-ink mb-3">
+                {t("language.label")}
+              </p>
+              <LanguageSelector variant="stacked" />
+            </div>
+            <div className="p-6 border-t-2 border-ink">
+              <SocialLinks />
+            </div>
           </motion.div>
         </>
       )}

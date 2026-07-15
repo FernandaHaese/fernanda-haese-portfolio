@@ -28,9 +28,9 @@ export function Footer() {
                 {t(`navigation.${n.key}`)}
               </Link>
             ))}
+            <LanguageSelector />
           </nav>
           <div className="flex items-center justify-end gap-3">
-            <LanguageSelector />
             <SocialLinks />
           </div>
         </div>

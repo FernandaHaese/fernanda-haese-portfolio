@@ -27,7 +27,10 @@ export function Header() {
             {t("brand")}
           </Link>
 
-          <nav className="hidden lg:flex flex-1 items-center justify-center gap-6" aria-label={t("navigation.home")}>
+          <nav
+            className="hidden lg:flex flex-1 items-center justify-center gap-6"
+            aria-label={t("navigation.home")}
+          >
             {NAV.map((item) => (
               <Link
                 key={item.to}
@@ -42,10 +45,10 @@ export function Header() {
                 {t(`navigation.${item.key}`)}
               </Link>
             ))}
+            <LanguageSelector />
           </nav>
 
           <div className="hidden lg:flex items-center gap-3 ml-auto">
-            <LanguageSelector />
             <SocialLinks />
           </div>
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { LanguageSelector } from "@/components/LanguageSelector";
@@ -18,9 +18,14 @@ export function Header() {
   const { t } = useTranslation("common");
   const [open, setOpen] = useState(false);
   const panelId = "mobile-menu-panel";
+  const isHome = useRouterState({
+    select: (state) => state.location.pathname === "/",
+  });
 
   return (
-    <header className="w-full pt-4 sm:pt-6 px-4 sm:px-6">
+    <header
+      className={cn("w-full pt-4 sm:pt-6 px-4 sm:px-6 z-20", isHome && "absolute inset-x-0 top-0")}
+    >
       <div className="mx-auto max-w-content">
         <div className="card-hard rounded-full flex items-center gap-4 px-4 sm:px-6 py-2.5 sm:py-3">
           <Link to="/" className="font-extrabold text-base sm:text-lg tracking-tight shrink-0">

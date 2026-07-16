@@ -17,7 +17,7 @@ export function SectionTitle({
     <Tag
       className={cn(
         "font-extrabold tracking-tight text-ink",
-        as === "h1" ? "text-4xl sm:text-5xl md:text-6xl" : "text-3xl sm:text-4xl md:text-5xl",
+        as === "h1" ? "text-3xl sm:text-4xl md:text-5xl" : "text-2xl sm:text-3xl md:text-4xl",
         align === "center" && "text-center",
         className,
       )}

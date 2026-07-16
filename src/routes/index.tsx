@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { AnimatedSection } from "@/components/AnimatedSection";
-import { HeroDecorations } from "@/components/HeroDecorations";
+import { useEffect, useRef } from "react";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SectionTitle } from "@/components/SectionTitle";
 import { ServiceCard } from "@/components/ServiceCard";
@@ -11,6 +11,12 @@ import i18n from "@/i18n";
 import { projects } from "@/data/projects";
 import { services } from "@/data/services";
 import { siteConfig } from "@/data/siteConfig";
+
+declare global {
+  interface Window {
+    FinisherHeader?: new (config: Record<string, unknown>) => unknown;
+  }
+}
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -29,14 +35,56 @@ export const Route = createFileRoute("/")({
 function Home() {
   const { t } = useTranslation(["home", "common"]);
   const featured = projects.slice(0, 6);
+  const finisherInitialized = useRef(false);
+
+  useEffect(() => {
+    if (finisherInitialized.current) return;
+    if (!window.FinisherHeader) return;
+
+    // A animação em canvas não respeita o CSS de reduced motion.
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+
+    finisherInitialized.current = true;
+
+    new window.FinisherHeader({
+      count: 12,
+      size: {
+        min: 1300,
+        max: 1500,
+        pulse: 0,
+      },
+      speed: {
+        x: {
+          min: 0.6,
+          max: 3,
+        },
+        y: {
+          min: 0.6,
+          max: 3,
+        },
+      },
+      colors: {
+        background: "#fdf8e1",
+        particles: ["#f5c518", "#e5b8f4"],
+      },
+      blending: "screen",
+      opacity: {
+        center: 0.6,
+        edge: 0,
+      },
+      skew: 0,
+      shapes: ["c"],
+    });
+  }, []);
 
   return (
     <div className="pb-8">
       {/* HERO */}
-      <section className="relative px-4 sm:px-6 pt-14 sm:pt-16 pb-14 sm:pb-20">
-        <HeroDecorations />
-        <div className="mx-auto max-w-3xl text-center relative">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tight">
+      <section className="finisher-header relative isolate overflow-hidden px-4 sm:px-6 pt-32 sm:pt-36 lg:pt-40 pb-14 sm:pb-20">
+        <div className="mx-auto max-w-3xl text-center relative z-10">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight tracking-tight">
             <span className="block">
               {t("home:hero.greeting")}{" "}
               <span className="title-highlight">{t("home:hero.name")}</span>

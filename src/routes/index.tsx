@@ -33,7 +33,7 @@ function Home() {
   return (
     <div className="pb-8">
       {/* HERO */}
-      <section className="relative px-4 sm:px-6 pt-10 sm:pt-16 pb-14 sm:pb-20">
+      <section className="relative px-4 sm:px-6 pt-14 sm:pt-16 pb-14 sm:pb-20">
         <HeroDecorations />
         <div className="mx-auto max-w-3xl text-center relative">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tight">
@@ -64,14 +64,21 @@ function Home() {
       </section>
 
       {/* ABOUT (resumido) */}
-      <AnimatedSection className="bg-card border-y-2 border-ink">
-        <div className="mx-auto max-w-content px-4 sm:px-6 py-14 sm:py-20 grid gap-10 md:grid-cols-[1fr_auto] md:items-center">
-          <div className="max-w-xl">
-            <SectionTitle as="h2">
-              {t("home:about.title", { defaultValue: "About Me" })}
-            </SectionTitle>
-            <p className="mt-5 text-muted-ink leading-relaxed">{t("home:about.description")}</p>
-            <div className="mt-6 flex flex-wrap gap-3">
+      <AnimatedSection className="bg-card border-y-2 border-ink px-4 sm:px-6 py-14 sm:py-20">
+        <div className="mx-auto max-w-content grid gap-8 md:grid-cols-[1fr_auto] md:items-start">
+          <div className="max-w-xl mx-auto text-center md:mx-0 md:text-left">
+            <div className="flex flex-col items-center md:items-start">
+              <SectionTitle as="h2">{t("about:title")}</SectionTitle>
+            </div>
+            {/* Mobile photo below title */}
+            <div className="md:hidden mt-6 flex justify-center">
+              <div
+                className="card-hard bg-placeholder w-48 h-48"
+                aria-label={t("about:photoAlt")}
+              />
+            </div>
+            <p className="mt-6 text-muted-ink leading-relaxed">{t("about:description")}</p>
+            <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-3">
               <a
                 href={siteConfig.cvPath}
                 download
@@ -80,18 +87,17 @@ function Home() {
                 {t("common:buttons.downloadCV")}
               </a>
               <Link
-                to="/about"
+                to="/portfolio"
                 className="btn-hard btn-hard-hover bg-card px-4 py-2 font-semibold min-h-11"
               >
                 {t("common:buttons.seeMore")}
               </Link>
             </div>
           </div>
-          {/* TODO: substituir por foto real da Fernanda */}
-          <div
-            className="justify-self-center card-hard bg-placeholder w-52 h-52 sm:w-64 sm:h-64"
-            aria-label={t("home:about.title")}
-          />
+          {/* Desktop photo right */}
+          <div className="hidden md:block">
+            <div className="card-hard bg-placeholder w-64 h-64" aria-label={t("about:photoAlt")} />
+          </div>
         </div>
       </AnimatedSection>
 

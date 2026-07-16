@@ -38,7 +38,7 @@ function About() {
       {/* Header block */}
       <AnimatedSection className="px-4 sm:px-6 pt-10 sm:pt-16 pb-10">
         <div className="mx-auto max-w-content grid gap-8 md:grid-cols-[1fr_auto] md:items-start">
-          <div className="max-w-xl text-center md:text-left">
+          <div className="max-w-xl mx-auto text-center md:mx-0 md:text-left">
             <div className="flex flex-col items-center md:items-start">
               <SectionTitle as="h1">{t("about:title")}</SectionTitle>
             </div>
@@ -76,7 +76,9 @@ function About() {
       {/* Skills & Tools */}
       <AnimatedSection className="px-4 sm:px-6 py-10">
         <div className="mx-auto max-w-content">
-          <SectionTitle as="h2">{t("about:skills.title")}</SectionTitle>
+          <div className="flex flex-col items-center md:items-start">
+            <SectionTitle as="h2">{t("about:skills.title")}</SectionTitle>
+          </div>
           {/* Desktop: two-column grid, source order (Development, Design, Tools, Language) */}
           <div className="mt-8 hidden md:grid grid-cols-2 gap-6">
             {skillGroups.map((g) => (
@@ -95,7 +97,9 @@ function About() {
       {/* Experience */}
       <AnimatedSection className="px-4 sm:px-6 py-10">
         <div className="mx-auto max-w-content">
-          <SectionTitle as="h2">{t("about:experience.title")}</SectionTitle>
+          <div className="flex flex-col items-center md:items-start">
+            <SectionTitle as="h2">{t("about:experience.title")}</SectionTitle>
+          </div>
           <div className="mt-8 flex flex-col gap-5">
             {experience.map((item) => {
               const base = `about:experience.items.${item.translationKey}`;
@@ -125,7 +129,9 @@ function About() {
       {/* Education */}
       <AnimatedSection className="px-4 sm:px-6 py-10">
         <div className="mx-auto max-w-content">
-          <SectionTitle as="h2">{t("about:education.title")}</SectionTitle>
+          <div className="flex flex-col items-center md:items-start">
+            <SectionTitle as="h2">{t("about:education.title")}</SectionTitle>
+          </div>
           <div className="mt-8 flex flex-col gap-5">
             {education.map((item) => {
               const base = `about:education.items.${item.translationKey}`;

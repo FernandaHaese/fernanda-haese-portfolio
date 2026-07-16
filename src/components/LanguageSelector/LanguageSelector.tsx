@@ -44,7 +44,11 @@ export function LanguageSelector({
 
   if (variant === "stacked") {
     return (
-      <div className={cn("flex flex-col gap-2", className)} role="group" aria-label={t("language.label")}>
+      <div
+        className={cn("flex flex-col gap-2", className)}
+        role="group"
+        aria-label={t("language.label")}
+      >
         {LANGS.map((l) => {
           const active = i18n.language?.startsWith(l.code);
           return (
@@ -82,7 +86,10 @@ export function LanguageSelector({
       >
         <span aria-hidden>{current.flag}</span>
         <span>{t(`language.${current.code}`)}</span>
-        <ChevronDown className={cn("h-4 w-4 transition-transform", open && "rotate-180")} aria-hidden />
+        <ChevronDown
+          className={cn("h-4 w-4 transition-transform", open && "rotate-180")}
+          aria-hidden
+        />
       </button>
       {open && (
         <ul
@@ -101,7 +108,7 @@ export function LanguageSelector({
                   onClick={() => change(l.code)}
                   className={cn(
                     "flex w-full items-center justify-between gap-2 rounded-md px-3 py-2 text-sm font-medium min-h-10",
-                    active ? "bg-lilac" : "hover:bg-lilac-soft",
+                    active ? "bg-card" : "hover:font-bold",
                   )}
                 >
                   <span className="flex items-center gap-2">

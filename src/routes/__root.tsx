@@ -127,6 +127,7 @@ function RootShell({ children }: { children: ReactNode }) {
       </head>
       <body>
         {children}
+        <script src="/finisher-header.es5.min.js" />
         <Scripts />
       </body>
     </html>
@@ -140,7 +141,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-lilac focus:text-ink focus:px-3 focus:py-2 focus:rounded-md focus:border-2 focus:border-ink focus:font-semibold"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-100 focus:bg-lilac focus:text-ink focus:px-3 focus:py-2 focus:rounded-md focus:border-2 focus:border-ink focus:font-semibold"
       >
         Skip to main content
       </a>

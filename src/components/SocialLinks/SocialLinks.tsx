@@ -1,4 +1,3 @@
-import { Github, Linkedin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { siteConfig } from "@/data/siteConfig";
 import { cn } from "@/lib/utils";

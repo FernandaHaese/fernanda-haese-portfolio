@@ -31,8 +31,8 @@ function LinkedinIcon({ className }: { className?: string }) {
   return (
     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M18 2.25C18 1.00818 16.9918 0 15.75 0H2.25C1.00818 0 0 1.00818 0 2.25V15.75C0 16.9918 1.00818 18 2.25 18H15.75C16.9918 18 18 16.9918 18 15.75V2.25Z"
         fill="black"
       />

@@ -82,9 +82,7 @@ function ProjectDetails() {
         <AnimatedSection className="mt-6">
           <div className="card-hard p-6 sm:p-8">
             <SectionTitle as="h1">{t(`${key}.title`)}</SectionTitle>
-            <p className="mt-5 text-muted-ink leading-relaxed">
-              {t(`${key}.fullDescription`)}
-            </p>
+            <p className="mt-5 text-muted-ink leading-relaxed">{t(`${key}.fullDescription`)}</p>
             <hr className="my-6 border-ink/20" />
             <dl className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 text-sm">
               {(["client", "role", "timeline", "deliverables"] as const).map((k) => (
@@ -128,9 +126,7 @@ function ProjectDetails() {
                     {n}
                   </span>
                   <div className="min-w-0">
-                    <h3 className="font-extrabold">
-                      {t(`shared.process.step${n}.title`)}
-                    </h3>
+                    <h3 className="font-extrabold">{t(`shared.process.step${n}.title`)}</h3>
                     <p className="text-sm text-muted-ink mt-1">
                       {t(`shared.process.step${n}.description`)}
                     </p>
@@ -152,8 +148,8 @@ function ProjectDetails() {
             {/* Gallery placeholders — TODO substituir por galeria real */}
             <div className="mt-8 grid gap-4 sm:grid-cols-2" aria-label={t("labels.gallery")}>
               <div className="bg-placeholder rounded-xl border-2 border-ink aspect-square" />
-              <div className="bg-placeholder rounded-xl border-2 border-ink aspect-[4/3]" />
-              <div className="bg-placeholder rounded-xl border-2 border-ink aspect-[4/3] sm:col-start-1" />
+              <div className="bg-placeholder rounded-xl border-2 border-ink aspect-4/3" />
+              <div className="bg-placeholder rounded-xl border-2 border-ink aspect-4/3 sm:col-start-1" />
               <div className="bg-placeholder rounded-xl border-2 border-ink aspect-square" />
             </div>
           </div>

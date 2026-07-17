@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
+import { ArrowRight } from "lucide-react";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { SectionTitle } from "@/components/SectionTitle";
 import { SkillGroupCard } from "@/components/SkillCard";
@@ -44,9 +45,13 @@ function About() {
             </div>
             {/* Mobile photo below title */}
             <div className="md:hidden mt-6 flex justify-center">
-              <div
-                className="card-hard bg-placeholder w-48 h-48"
-                aria-label={t("about:photoAlt")}
+              <img
+                src="/images/profile/fernanda-haese.webp"
+                alt={t("about:photoAlt")}
+                width={1000}
+                height={1000}
+                loading="lazy"
+                className="card-hard w-48 h-48 object-cover object-center"
               />
             </div>
             <p className="mt-6 text-muted-ink leading-relaxed">{t("about:description")}</p>
@@ -59,16 +64,22 @@ function About() {
                 {t("common:buttons.downloadCV")}
               </a>
               <Link
-                to="/portfolio"
-                className="btn-hard btn-hard-hover bg-card px-4 py-2 font-semibold min-h-11"
+                to="/contact"
+                className="btn-hard btn-hard-hover bg-card px-4 py-2 font-semibold min-h-11 inline-flex items-center gap-2"
               >
-                {t("common:buttons.seeMore")}
+                {t("common:buttons.getInTouch")} <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </div>
           {/* Desktop photo right */}
           <div className="hidden md:block">
-            <div className="card-hard bg-placeholder w-64 h-64" aria-label={t("about:photoAlt")} />
+            <img
+              src="/images/profile/fernanda-haese.webp"
+              alt={t("about:photoAlt")}
+              width={1000}
+              height={1000}
+              className="card-hard w-64 h-64 object-cover object-center"
+            />
           </div>
         </div>
       </AnimatedSection>

@@ -120,9 +120,13 @@ function Home() {
             </div>
             {/* Mobile photo below title */}
             <div className="md:hidden mt-6 flex justify-center">
-              <div
-                className="card-hard bg-placeholder w-48 h-48"
-                aria-label={t("about:photoAlt")}
+              <img
+                src="/images/profile/fernanda-haese.webp"
+                alt={t("about:photoAlt")}
+                width={1000}
+                height={1000}
+                loading="lazy"
+                className="card-hard w-48 h-48 object-cover object-center"
               />
             </div>
             <p className="mt-6 text-muted-ink leading-relaxed">{t("about:description")}</p>
@@ -135,16 +139,22 @@ function Home() {
                 {t("common:buttons.downloadCV")}
               </a>
               <Link
-                to="/portfolio"
-                className="btn-hard btn-hard-hover bg-card px-4 py-2 font-semibold min-h-11"
+                to="/about"
+                className="btn-hard btn-hard-hover bg-card px-4 py-2 font-semibold min-h-11 inline-flex items-center gap-1.5"
               >
-                {t("common:buttons.seeMore")}
+                {t("common:buttons.details")} <ArrowRight className="h-4 w-4" aria-hidden />
               </Link>
             </div>
           </div>
           {/* Desktop photo right */}
           <div className="hidden md:block">
-            <div className="card-hard bg-placeholder w-64 h-64" aria-label={t("about:photoAlt")} />
+            <img
+              src="/images/profile/fernanda-haese.webp"
+              alt={t("about:photoAlt")}
+              width={1000}
+              height={1000}
+              className="card-hard w-64 h-64 object-cover object-center"
+            />
           </div>
         </div>
       </AnimatedSection>
@@ -174,7 +184,7 @@ function Home() {
         </div>
       </AnimatedSection>
 
-      {/* RECENT WORK */}
+      {/* PORTFOLIO */}
       <AnimatedSection className="bg-card border-y-2 border-ink px-4 sm:px-6 py-14 sm:py-20">
         <div className="mx-auto max-w-content">
           <div className="text-center">

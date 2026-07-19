@@ -124,7 +124,7 @@ function Home() {
         <div className="mx-auto max-w-content grid gap-8 md:grid-cols-[1fr_auto] md:items-start">
           <div className="max-w-xl mx-auto text-center md:mx-0 md:text-left">
             <div className="flex flex-col items-center md:items-start">
-              <SectionTitle as="h2">{t("about:title")}</SectionTitle>
+              <SectionTitle as="h2">{t("home:about.title")}</SectionTitle>
             </div>
             {/* Mobile photo below title */}
             <div className="md:hidden mt-6 flex justify-center">
@@ -137,7 +137,7 @@ function Home() {
                 className="card-hard w-48 h-48 object-cover object-center"
               />
             </div>
-            <p className="mt-6 text-muted-ink leading-relaxed">{t("about:description")}</p>
+            <p className="mt-6 text-muted-ink leading-relaxed">{t("home:about.description")}</p>
             <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-3">
               <a
                 href={siteConfig.cvPath}
@@ -176,18 +176,10 @@ function Home() {
             </SectionTitle>
             <p className="mt-4 text-muted-ink">{t("home:services.description")}</p>
           </div>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((s) => (
               <ServiceCard key={s.id} service={s} />
             ))}
-          </div>
-          <div className="mt-10 flex justify-center">
-            <Link
-              to="/contact"
-              className="btn-hard btn-hard-hover bg-lilac inline-flex items-center gap-2 px-5 py-2.5 font-semibold min-h-11"
-            >
-              {t("common:buttons.getInTouch")} <ArrowRight className="h-4 w-4" />
-            </Link>
           </div>
         </div>
       </AnimatedSection>
@@ -281,7 +273,7 @@ function Home() {
           </SectionTitle>
           <p className="mt-4 text-muted-ink">{t("home:contact.description")}</p>
         </div>
-        <div className="mx-auto max-w-2xl mt-10">
+        <div className="mx-auto max-w-2xl mt-6">
           <ContactForm compact />
         </div>
       </AnimatedSection>

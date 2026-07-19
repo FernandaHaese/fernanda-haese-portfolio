@@ -8,12 +8,11 @@
   "filters": {
     "all": "All",
     "ux-ui": "UX/UI",
-    "web-design": "Web Design",
-    "front-end": "Front-End",
-    "back-end": "Back-end",
-    "brand": "Brand",
+    "web-design": "Web",
+    "front-end": "Front-end",
+    "brand": "Visual Identity",
     "social-media": "Social Media",
-    "graphic-design": "Graphic Design"
+    "other": "Other"
   },
   "empty": "No projects match this filter yet.",
   "seeMore": "See more +"

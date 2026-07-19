@@ -1,5 +1,5 @@
 export type ProjectCategory =
-  "ux-ui" | "web-design" | "front-end" | "back-end" | "brand" | "social-media" | "graphic-design";
+  "ux-ui" | "web-design" | "front-end" | "brand" | "social-media" | "other";
 
 export type Project = {
   slug: string;
@@ -76,7 +76,7 @@ export const projects: Project[] = [
   {
     slug: "brotai-platform",
     translationKey: "brotaiPlatform",
-    categories: ["ux-ui", "front-end", "back-end"],
+    categories: ["ux-ui", "front-end"],
     thumbnail: "/images/projects/plataforma-brotai/imagem-8.webp",
     gallery: [
       "/images/projects/plataforma-brotai/imagem-8.webp",
@@ -94,8 +94,7 @@ export const projectCategories: ("all" | ProjectCategory)[] = [
   "ux-ui",
   "web-design",
   "front-end",
-  "back-end",
   "brand",
-  "graphic-design",
   "social-media",
+  "other",
 ];

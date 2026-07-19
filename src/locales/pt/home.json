@@ -7,27 +7,27 @@
     "greeting": "Olá! Eu sou",
     "name": "Fernanda",
     "role": "Designer & Desenvolvedora",
-    "description": "Crio experiências digitais que unem design cuidadoso e engenharia front-end sólida, com foco em clareza, acessibilidade e encanto."
+    "description": "Combino design e desenvolvimento para transformar ideias em experiências digitais claras, acessíveis e fáceis de usar."
   },
   "about": {
     "title": "Sobre Mim",
-    "description": "Sou Designer Digital com experiência em UX/UI Design e desenvolvimento Front-End. Trabalho criando soluções digitais desde a pesquisa e estruturação da informação até o design e a implementação de interfaces, combinando design visual, experiência do usuário e tecnologias como React, JavaScript, HTML e CSS."
+    "description": "Sou Designer Digital com experiência em UI/UX Design e desenvolvimento Front-end. Gosto de transformar ideias em projetos concretos, participando de todo o processo criativo, da pesquisa e concepção da ideia à definição da direção visual e implementação."
   },
   "services": {
-    "title": "Meus Serviços",
-    "description": "Da pesquisa e design de interface à implementação front-end — ajudo times a lançar produtos que parecem simples de usar.",
+    "title": "O que eu faço",
+    "description": "Uno design e tecnologia para criar marcas, interfaces e experiências digitais claras, consistentes e pensadas para pessoas.",
     "items": {
-      "uxui": {
+      "digitalDesign": {
         "title": "UX/UI Design",
-        "description": "Pesquisa, wireframes, protótipos e interfaces refinadas apoiadas em um design system escalável."
-      },
-      "webDesign": {
-        "title": "Web Design",
-        "description": "Páginas web editoriais e cheias de personalidade, sempre responsivas, rápidas e acessíveis."
+        "description": "Crio interfaces para sites, plataformas e aplicativos, com sistemas de design que transformam ideias em experiências digitais intuitivas e consistentes."
       },
       "frontend": {
         "title": "Desenvolvimento Front-End",
-        "description": "Front-ends componentizados em React e TypeScript, com atenção a detalhes e performance."
+        "description": "Desenvolvo interfaces responsivas e interativas com React, JavaScript e TypeScript, unindo qualidade técnica e atenção aos detalhes."
+      },
+      "brandVisual": {
+        "title": "Presença Digital",
+        "description": "Ajudo marcas a se apresentarem de forma consistente e autêntica na web, desde sua identidade visual e redes sociais até websites e materiais de comunicação."
       }
     }
   },

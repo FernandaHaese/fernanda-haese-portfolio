@@ -1,15 +1,47 @@
 import { useTranslation } from "react-i18next";
+import { Code2, PanelsTopLeft, Shapes, type LucideIcon } from "lucide-react";
 import type { Service } from "@/data/services";
+import { cn } from "@/lib/utils";
+
+const servicePresentation: Record<string, { icon: LucideIcon; color: string }> = {
+  "digital-design": {
+    icon: PanelsTopLeft,
+    color: "bg-card",
+  },
+  frontend: {
+    icon: Code2,
+    color: "bg-card",
+  },
+  "brand-visual-design": {
+    icon: Shapes,
+    color: "bg-card",
+  },
+};
 
 export function ServiceCard({ service }: { service: Service }) {
   const { t } = useTranslation("home");
   const base = `services.items.${service.translationKey}`;
+  const presentation = servicePresentation[service.id] ?? {
+    icon: Code2,
+    color: "bg-card",
+  };
+  const Icon = presentation.icon;
+
   return (
-    <article className="card-hard p-5 sm:p-6 flex flex-col gap-3 h-full">
-      <h3 className="text-lg font-extrabold">{t(`${base}.title`)}</h3>
-      <p className="text-sm text-muted-ink flex-1">{t(`${base}.description`)}</p>
-      {/* TODO: substituir por imagem/ilustração do serviço */}
-      <div className="mt-2 aspect-[4/3] bg-placeholder rounded-lg" aria-hidden="true" />
+    <article className={cn("card-hard h-full p-5 sm:p-6", presentation.color)}>
+      <div className="flex items-start gap-4">
+        <div
+          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-ink bg-lilac-soft"
+          aria-hidden="true"
+        >
+          <Icon className="h-6 w-6" strokeWidth={1.8} />
+        </div>
+
+        <div className="min-w-0">
+          <h3 className="text-lg font-extrabold">{t(`${base}.title`)}</h3>
+          <p className="mt-2 text-sm leading-relaxed text-muted-ink">{t(`${base}.description`)}</p>
+        </div>
+      </div>
     </article>
   );
 }

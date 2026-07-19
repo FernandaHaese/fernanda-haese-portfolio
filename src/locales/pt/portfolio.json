@@ -11,7 +11,9 @@
     "web-design": "Web Design",
     "front-end": "Front-End",
     "back-end": "Back-end",
-    "full-stack": "Full-Stack"
+    "brand": "Identidade Visual",
+    "social-media": "Mídias Sociais",
+    "graphic-design": "Design Gráfico"
   },
   "empty": "Nenhum projeto para este filtro ainda.",
   "seeMore": "Ver mais +"

@@ -2,15 +2,18 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { useState } from "react";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SectionTitle } from "@/components/SectionTitle";
 import { ServiceCard } from "@/components/ServiceCard";
 import { ContactForm } from "@/components/ContactForm";
 import i18n from "@/i18n";
-import { projects } from "@/data/projects";
+import { projectCategories, projects, type ProjectCategory } from "@/data/projects";
 import { services } from "@/data/services";
 import { siteConfig } from "@/data/siteConfig";
+import { cn } from "@/lib/utils";
 
 declare global {
   interface Window {
@@ -36,6 +39,11 @@ function Home() {
   const { t } = useTranslation(["home", "common"]);
   const featured = projects.slice(0, 6);
   const finisherInitialized = useRef(false);
+  const [filter, setFilter] = useState<"all" | ProjectCategory>("all");
+  const [visible, setVisible] = useState(6);
+
+  const filtered = projects.filter((p) => filter === "all" || p.categories.includes(filter));
+  const shown = filtered.slice(0, visible);
 
   useEffect(() => {
     if (finisherInitialized.current) return;
@@ -192,11 +200,68 @@ function Home() {
               {t("home:recentWork.title")}
             </SectionTitle>
           </div>
-          <div id="recent-work" className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {featured.map((p) => (
-              <ProjectCard key={p.slug} project={p} />
-            ))}
+          <ul
+            className="flex flex-wrap justify-center gap-2 sm:gap-3 mt-6"
+            role="tablist"
+            aria-label={t("portfolio:titleDesktop")}
+          >
+            {projectCategories.map((cat) => {
+              const active = filter === cat;
+              return (
+                <li key={cat}>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected={active}
+                    onClick={() => {
+                      setFilter(cat);
+                      setVisible(6);
+                    }}
+                    className={cn(
+                      "btn-hard btn-hard-hover px-3 sm:px-4 py-1.5 text-sm font-semibold min-h-9",
+                      active ? "bg-lilac" : "bg-card",
+                    )}
+                  >
+                    {t(`portfolio:filters.${cat}`)}
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+          <div className="mt-10">
+            {shown.length === 0 ? (
+              <p className="text-center text-muted-ink">{t("portfolio:empty")}</p>
+            ) : (
+              <motion.div layout className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <AnimatePresence mode="popLayout">
+                  {shown.map((p) => (
+                    <motion.div
+                      key={p.slug}
+                      layout
+                      initial={{ opacity: 0, y: 12 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -12 }}
+                      transition={{ duration: 0.25 }}
+                    >
+                      <ProjectCard project={p} />
+                    </motion.div>
+                  ))}
+                </AnimatePresence>
+              </motion.div>
+            )}
           </div>
+
+          {visible < filtered.length && (
+            <div className="mt-10 flex justify-center">
+              <button
+                type="button"
+                onClick={() => setVisible((v) => v + 6)}
+                className="btn-hard btn-hard-hover bg-card px-5 py-2.5 font-semibold min-h-11"
+              >
+                {t("portfolio:seeMore")}
+              </button>
+            </div>
+          )}
           <div className="mt-10 flex justify-center">
             <Link
               to="/portfolio"

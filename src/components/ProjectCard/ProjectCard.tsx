@@ -9,7 +9,18 @@ export function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="card-hard overflow-hidden flex flex-col h-full">
       {/* TODO: substituir pela imagem real do projeto */}
-      <div className="aspect-4/3 bg-placeholder border-b-2 border-ink" aria-hidden="true" />
+      {project.thumbnail ? (
+        <img
+          src={project.thumbnail}
+          alt={t(`${key}.coverAlt`)}
+          width={1600}
+          height={1200}
+          loading="lazy"
+          className="aspect-4/3 w-full object-cover border-b-2 border-ink"
+        />
+      ) : (
+        <div className="aspect-4/3 bg-placeholder border-b-2 border-ink" aria-hidden="true" />
+      )}
       <div className="p-5 sm:p-6 flex flex-col gap-3 flex-1">
         <h3 className="text-lg sm:text-xl font-extrabold text-ink">{t(`${key}.title`)}</h3>
         <p className="text-sm text-muted-ink flex-1">{t(`${key}.shortDescription`)}</p>

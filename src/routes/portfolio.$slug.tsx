@@ -145,13 +145,24 @@ function ProjectDetails() {
             </h2>
             <p className="mt-4 text-muted-ink leading-relaxed">{t("shared.result")}</p>
 
-            {/* Gallery placeholders — TODO substituir por galeria real */}
-            <div className="mt-8 grid gap-4 sm:grid-cols-2" aria-label={t("labels.gallery")}>
-              <div className="bg-placeholder rounded-xl border-2 border-ink aspect-square" />
-              <div className="bg-placeholder rounded-xl border-2 border-ink aspect-4/3" />
-              <div className="bg-placeholder rounded-xl border-2 border-ink aspect-4/3 sm:col-start-1" />
-              <div className="bg-placeholder rounded-xl border-2 border-ink aspect-square" />
-            </div>
+            {/* Gallery */}
+            {project.gallery && project.gallery.length > 0 ? (
+              <div className="mt-8 grid gap-4 sm:grid-cols-2" aria-label={t("labels.gallery")}>
+                {project.gallery.map((image, index) => (
+                  <img
+                    key={image}
+                    src={image}
+                    alt={`${t(`${key}.title`)} — ${index + 1}`}
+                    width={1600}
+                    height={1200}
+                    loading="lazy"
+                    className="w-full aspect-4/3 object-cover rounded-xl border-2 border-ink"
+                  />
+                ))}
+              </div>
+            ) : (
+              <div className="mt-8 grid gap-4 sm:grid-cols-2">{/* placeholders atuais */}</div>
+            )}
           </div>
         </AnimatedSection>
       </div>

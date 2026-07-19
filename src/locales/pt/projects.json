@@ -35,59 +35,59 @@
     "result": "O produto final é entregue com melhorias mensuráveis nas métricas que importam — usabilidade, conversão e velocidade do time — além de um design system que a equipe pode continuar evoluindo."
   },
   "items": {
-    "financeDashboard": {
-      "title": "Dashboard Financeiro",
-      "shortDescription": "Painel de gestão financeira desenhado para pequenas empresas.",
-      "fullDescription": "Painel financeiro completo pensado para pequenas empresas, cobrindo fluxo de caixa, faturamento e previsão em um único espaço focado.",
-      "client": "Cliente confidencial",
+    "websiteEkovitra": {
+      "title": "Website Ekovitra",
+      "shortDescription": "Website institucional responsivo desenvolvido para destacar soluções em construção sustentável e fortalecer a presença digital da empresa.",
+      "fullDescription": "Desenvolvimento completo do design e da interface de um website responsivo para uma construtora sustentável sediada em Manaus, Amazonas. O projeto teve como objetivo transmitir os valores de inovação e sustentabilidade da marca por meio de uma experiência intuitiva, identidade visual moderna e navegação otimizada para desktop, tablet e dispositivos móveis.",
+      "client": "Ekovitra",
+      "role": "UX/UI Designer & Desenvolvedora Front-end",
+      "timeline": "2025",
+      "deliverables": "Pesquisa, Design de Interface, Desenvolvimento Responsivo, React, TypeScript, Vite, Tailwind CSS, shadcn/ui"
+    },
+    "memorioApp": {
+      "title": "App Memório",
+      "shortDescription": "Um aplicativo de diário digital criado para ajudar usuários a registrar emoções, reflexões diárias e memórias significativas em um só lugar.",
+      "fullDescription": "Desenvolvimento do projeto de UX/UI do Memório, um aplicativo de diário digital criado como projeto acadêmico durante o curso de Design Digital na FIAP. O aplicativo foi projetado para oferecer um espaço simples e acolhedor para que os usuários possam registrar suas emoções diárias, escrever reflexões pessoais e guardar momentos significativos por meio de fotografias. O projeto teve como foco a criação de uma experiência intuitiva e emocionalmente envolvente, apoiada por uma identidade visual acolhedora, hierarquia clara de informações e interações fáceis de utilizar. Todas as telas e soluções visuais da interface foram desenvolvidas no Figma.",
+      "client": "Projeto Acadêmico — FIAP",
       "role": "UX/UI Designer",
-      "timeline": "Jan – Fev 2026",
-      "deliverables": "Pesquisa, UX/UI, protótipo"
+      "timeline": "2025",
+      "deliverables": "UX/UI Design, Design de Interface, Design de Interação, Design Visual, Figma"
     },
-    "travelApp": {
-      "title": "App de Viagens",
-      "shortDescription": "App mobile-first para planejar viagens em grupo.",
-      "fullDescription": "Um planejador de viagens mobile-first que permite a grupos pequenos montar um roteiro compartilhado, dividir despesas e centralizar todas as reservas.",
-      "client": "Projeto pessoal",
-      "role": "UX/UI & Front-End",
-      "timeline": "Mar – Abr 2026",
-      "deliverables": "Pesquisa, UI, protótipo React"
+    "helenaDuarteWebsite": {
+      "title": "Website Helena Duarte",
+      "shortDescription": "Um website profissional fictício que combina design editorial e desenvolvimento responsivo para uma especialista em Direito Empresarial e Proteção de Dados.",
+      "fullDescription": "Design e desenvolvimento de um website profissional fictício para Helena Duarte, uma advogada fictícia especializada em Direito Empresarial e Proteção de Dados. O projeto foi criado como uma demonstração para portfólio, com a personagem, o retrato, as credenciais, as informações de contato, as publicações e os eventos desenvolvidos exclusivamente para o conceito. O website foi projetado para transmitir autoridade, conhecimento e confiança por meio de uma identidade visual refinada, tipografia inspirada no design editorial, hierarquia clara de informações e layouts responsivos para dispositivos desktop e mobile. Fui responsável tanto pelo design da interface quanto pela implementação front-end.",
+      "client": "Projeto Pessoal / Conceitual",
+      "role": "UX/UI Designer & Desenvolvedora Front-End",
+      "timeline": "2025",
+      "deliverables": "UX/UI Design, Web Design Responsivo, Desenvolvimento Front-End, React, TypeScript, Vite, Tailwind CSS, shadcn/ui"
     },
-    "brandSite": {
-      "title": "Site de Marca",
-      "shortDescription": "Site editorial com um sistema tipográfico marcante.",
-      "fullDescription": "Site one-page que se apoia em tipografia forte, grid preciso e micro-interações para comunicar o ponto de vista do estúdio.",
-      "client": "Estúdio Placeholder",
-      "role": "Web Design & Front-End",
-      "timeline": "Set – Out 2025",
-      "deliverables": "Design & Front-End"
+    "sensenGamesWebsite": {
+      "title": "Website Sensen Games",
+      "shortDescription": "Website oficial responsivo para um estúdio indie brasileiro de jogos, apresentando seus jogos, sua história e sua identidade criativa para um público global.",
+      "fullDescription": "Participação no design e desenvolvimento colaborativo do website oficial da Sensen Games, um estúdio indie brasileiro fundado por dois irmãos que compartilham a paixão por videogames desde as eras do Super Nintendo e PlayStation. O projeto foi desenvolvido durante a participação no programa Bolsa Futuro Digital, uma iniciativa da Softex em parceria com o Ministério da Educação, em um curso de formação em Desenvolvimento Front-End com foco em React. O website foi desenvolvido para o estúdio real e projetado para comunicar sua identidade, história e jogos por meio de uma experiência digital envolvente e responsiva. O projeto contou com suporte multilíngue em português e inglês, navegação SPA, otimização para SEO, interfaces responsivas e formulário de contato integrado ao envio de e-mails. O desenvolvimento foi realizado em equipe, em um ambiente colaborativo.",
+      "client": "Sensen Games",
+      "role": "UX/UI Designer & Front-End Developer",
+      "timeline": "2025",
+      "deliverables": "Desenvolvimento Front-End, Web Design Responsivo, React, TypeScript, Vite, Tailwind CSS, shadcn/ui, React Router DOM, i18next, React Helmet Async, Lucide React, EmailJS"
     },
-    "taskManager": {
-      "title": "Gerenciador de Tarefas",
-      "shortDescription": "Gerenciador full-stack com colaboração em tempo real.",
-      "fullDescription": "Gerenciador de tarefas colaborativo construído ponta a ponta em React, Node.js e Postgres, com atualizações em tempo real e UX keyboard-first.",
-      "client": "Ferramenta interna",
-      "role": "Desenvolvedora Full-Stack",
-      "timeline": "Jun – Ago 2025",
-      "deliverables": "Produto, UI e desenvolvimento full-stack"
+    "natPlusChatbot": {
+      "title": "Chatbot Nat+",
+      "shortDescription": "Um conceito de IA conversacional criado para transformar a assistente virtual da Natura em uma consultora digital de beleza personalizada e empática.",
+      "fullDescription": "Criação colaborativa do Nat+, um conceito de inteligência artificial conversacional desenvolvido para o Challenge FIAP 2025 em parceria com a Natura. O projeto propôs uma evolução da assistente virtual já existente da Natura, transformando-a de uma ferramenta predominantemente operacional em uma consultora digital de beleza personalizada, capaz de compreender os usuários, recomendar produtos e acompanhar sua jornada de compra por meio de uma experiência mais humana e empática. O conceito explorou recomendações personalizadas de produtos de skincare e beleza com base nas preferências, rotinas, objetivos e ingredientes que os usuários desejam evitar, além de funcionalidades como análise de tons de pele, sugestões personalizadas de produtos, acompanhamento pós-compra e alertas proativos. Minha atuação foi principalmente em UX/UI Design, criando as interfaces do chatbot e os fluxos de interação. Também implementei a experiência projetada como um protótipo funcional de chatbot utilizando o GPTMaker, permitindo testar o conceito e os fluxos conversacionais na prática.",
+      "client": "Challenge FIAP 2025 × Natura",
+      "role": "UX/UI Designer & Prototipadora de Chatbot",
+      "timeline": "2025",
+      "deliverables": "UX/UI Design, Design Conversacional, Design de Interação, Fluxos de Usuário, Prototipação de Chatbot, GPTMaker, Figma"
     },
-    "portfolioCms": {
-      "title": "CMS de Portfólio",
-      "shortDescription": "CMS leve para portfólios de designers.",
-      "fullDescription": "Um CMS leve que permite designers publicarem cases sem tocar em código, com modelos de conteúdo tipados e editor pensado para textos longos.",
-      "client": "Projeto pessoal",
-      "role": "Back-End & Full-Stack",
-      "timeline": "Fev – Mai 2025",
-      "deliverables": "API, painel admin, deploy"
-    },
-    "landingPage": {
-      "title": "Landing Page de Produto",
-      "shortDescription": "Landing page de alta conversão para lançamento de SaaS.",
-      "fullDescription": "Landing page de alta conversão para o lançamento de um SaaS — proposta de valor clara, prova social e formulário otimizado, tudo responsivo e acessível.",
-      "client": "SaaS Placeholder",
-      "role": "Web Design",
-      "timeline": "Nov – Dez 2024",
-      "deliverables": "Design & Front-End"
+    "brotaiPlatform": {
+      "title": "Plataforma Brotaí",
+      "shortDescription": "Uma plataforma digital criada para simplificar o acesso a informações, inscrições, gestão de presença e processos administrativos do programa Brotaí.",
+      "fullDescription": "Desenvolvimento colaborativo de uma plataforma digital para o Brotaí, um programa social da Prefeitura de Niterói que oferece formação cultural e técnica gratuita para a população do município. A plataforma foi criada para centralizar as informações sobre o programa e simplificar o processo de inscrição dos participantes, além de oferecer fluxos específicos para professores e gestores. Os professores podem acessar suas turmas, registrar e consultar a presença dos alunos e gerenciar informações relacionadas às aulas. Os gestores do programa podem consultar dados, realizar cadastros e executar outras tarefas administrativas por meio de um sistema centralizado e acessível. O projeto foi desenvolvido como parte de uma Residência Tecnológica dentro do programa Bolsa Futuro Digital, uma iniciativa da Softex com apoio do Ministério da Educação. Minha atuação principal foi como Desenvolvedora Front-End, contribuindo para o desenvolvimento das interfaces e também apoiando o desenvolvimento Back-End e a modelagem de dados. O projeto está atualmente em andamento e será disponibilizado após a conclusão da etapa de desenvolvimento e deploy.",
+      "client": "Brotaí — Prefeitura de Niterói",
+      "role": "Desenvolvedora Front-End & Colaboradora Back-End",
+      "timeline": "2026 — Em andamento",
+      "deliverables": "Desenvolvimento Front-End, Desenvolvimento Back-End, React, Vite, JavaScript, Node.js, Prisma ORM, SQLite3, Lucide React"
     }
   }
 }

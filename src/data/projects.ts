@@ -1,4 +1,5 @@
-export type ProjectCategory = "ux-ui" | "web-design" | "front-end" | "back-end" | "full-stack";
+export type ProjectCategory =
+  "ux-ui" | "web-design" | "front-end" | "back-end" | "brand" | "social-media" | "graphic-design";
 
 export type Project = {
   slug: string;
@@ -10,12 +11,82 @@ export type Project = {
 
 // TODO: substituir por projetos reais quando disponíveis
 export const projects: Project[] = [
-  { slug: "finance-dashboard", translationKey: "financeDashboard", categories: ["ux-ui", "web-design"] },
-  { slug: "travel-app", translationKey: "travelApp", categories: ["ux-ui", "front-end"] },
-  { slug: "brand-site", translationKey: "brandSite", categories: ["web-design", "front-end"] },
-  { slug: "task-manager", translationKey: "taskManager", categories: ["full-stack"] },
-  { slug: "portfolio-cms", translationKey: "portfolioCms", categories: ["back-end", "full-stack"] },
-  { slug: "landing-page", translationKey: "landingPage", categories: ["web-design"] },
+  {
+    slug: "website-ekovitra",
+    translationKey: "websiteEkovitra",
+    categories: ["ux-ui", "web-design", "front-end"],
+    thumbnail: "/images/projects/website-ekovitra/imagem-6.webp",
+    gallery: [
+      "/images/projects/website-ekovitra/imagem-6.webp",
+      "/images/projects/website-ekovitra/imagem-5.webp",
+      "/images/projects/website-ekovitra/imagem-4.webp",
+      "/images/projects/website-ekovitra/imagem-12.webp",
+      "/images/projects/website-ekovitra/imagem-9.webp",
+    ],
+  },
+  {
+    slug: "sensen-games-website",
+    translationKey: "sensenGamesWebsite",
+    categories: ["ux-ui", "front-end", "web-design"],
+    thumbnail: "/images/projects/website-sensen-games/imagem-1.webp",
+    gallery: [
+      "/images/projects/website-sensen-games/imagem-1.webp",
+      "/images/projects/website-sensen-games/imagem-4.webp",
+      "/images/projects/website-sensen-games/imagem-5.webp",
+    ],
+  },
+  {
+    slug: "app-memorio",
+    translationKey: "memorioApp",
+    categories: ["ux-ui"],
+    thumbnail: "/images/projects/aplicativo-memorio/imagem-2.webp",
+    gallery: [
+      "/images/projects/aplicativo-memorio/imagem-2.webp",
+      "/images/projects/aplicativo-memorio/imagem-3.webp",
+      "/images/projects/aplicativo-memorio/imagem-4.webp",
+      "/images/projects/aplicativo-memorio/imagem-1.webp",
+    ],
+  },
+  {
+    slug: "helena-duarte-website",
+    translationKey: "helenaDuarteWebsite",
+    categories: ["web-design", "ux-ui", "front-end"],
+    thumbnail: "/images/projects/website-helena-duarte/imagem-4.webp",
+    gallery: [
+      "/images/projects/website-helena-duarte/imagem-4.webp",
+      "/images/projects/website-helena-duarte/imagem-6.webp",
+      "/images/projects/website-helena-duarte/imagem-2.webp",
+      "/images/projects/website-helena-duarte/imagem-3.webp",
+    ],
+  },
+  {
+    slug: "nat-plus-chatbot",
+    translationKey: "natPlusChatbot",
+    categories: ["ux-ui"],
+    thumbnail: "/images/projects/chatbot-nat/imagem-7.webp",
+    gallery: [
+      "/images/projects/chatbot-nat/imagem-3.webp",
+      "/images/projects/chatbot-nat/imagem-4.webp",
+      "/images/projects/chatbot-nat/imagem-5.webp",
+      "/images/projects/chatbot-nat/imagem-6.webp",
+      "/images/projects/chatbot-nat/imagem-7.webp",
+      "/images/projects/chatbot-nat/imagem-1.webp",
+    ],
+  },
+  {
+    slug: "brotai-platform",
+    translationKey: "brotaiPlatform",
+    categories: ["ux-ui", "front-end", "back-end"],
+    thumbnail: "/images/projects/plataforma-brotai/imagem-8.webp",
+    gallery: [
+      "/images/projects/plataforma-brotai/imagem-8.webp",
+      "/images/projects/plataforma-brotai/imagem-11.webp",
+      "/images/projects/plataforma-brotai/imagem-12.webp",
+      "/images/projects/plataforma-brotai/imagem-5.webp",
+      "/images/projects/plataforma-brotai/imagem-4.webp",
+      "/images/projects/plataforma-brotai/imagem-3.webp",
+    ],
+  },
 ];
 
 export const projectCategories: ("all" | ProjectCategory)[] = [
@@ -24,5 +95,7 @@ export const projectCategories: ("all" | ProjectCategory)[] = [
   "web-design",
   "front-end",
   "back-end",
-  "full-stack",
+  "brand",
+  "graphic-design",
+  "social-media",
 ];

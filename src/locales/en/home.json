@@ -17,17 +17,21 @@
     "title": "What I Do",
     "description": "I bring design and technology together to create clear, consistent and people-centered brands, interfaces and digital experiences.",
     "items": {
-      "digitalDesign": {
+      "uxui": {
         "title": "UX/UI Design",
-        "description": "I design interfaces for websites, platforms and apps, with design systems that turn ideas into intuitive and consistent digital experiences."
+        "description": "Research, wireframes, prototypes and polished interfaces backed by a scalable design system."
+      },
+      "webDesign": {
+        "title": "Web Design",
+        "description": "Editorial, brand-forward web pages that stay responsive, fast and accessible across devices."
       },
       "frontend": {
         "title": "Front-end Development",
         "description": "I build responsive and interactive interfaces with React, JavaScript and TypeScript, combining technical quality with close attention to detail."
       },
-      "brandVisual": {
+      "digitalPresence": {
         "title": "Digital Presence",
-        "description": "I help brands show up consistently and authentically in online spaces, from their visual identity and social media to their websites and communication materials."
+        "description": "I help brands build a consistent and authentic online presence, from their visual identity and social media to their websites and communication materials."
       }
     }
   },

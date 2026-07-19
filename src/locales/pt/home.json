@@ -17,17 +17,21 @@
     "title": "O que eu faço",
     "description": "Uno design e tecnologia para criar marcas, interfaces e experiências digitais claras, consistentes e pensadas para pessoas.",
     "items": {
-      "digitalDesign": {
+      "uxui": {
         "title": "UX/UI Design",
-        "description": "Crio interfaces para sites, plataformas e aplicativos, com sistemas de design que transformam ideias em experiências digitais intuitivas e consistentes."
+        "description": "Pesquisa, wireframes, protótipos e interfaces refinadas apoiadas em um design system escalável."
+      },
+      "webDesign": {
+        "title": "Web Design",
+        "description": "Páginas web editoriais e cheias de personalidade, sempre responsivas, rápidas e acessíveis."
       },
       "frontend": {
         "title": "Desenvolvimento Front-End",
         "description": "Desenvolvo interfaces responsivas e interativas com React, JavaScript e TypeScript, unindo qualidade técnica e atenção aos detalhes."
       },
-      "brandVisual": {
+      "digitalPresence": {
         "title": "Presença Digital",
-        "description": "Ajudo marcas a se apresentarem de forma consistente e autêntica na web, desde sua identidade visual e redes sociais até websites e materiais de comunicação."
+        "description": "Ajudo marcas a construirem uma presença online consistente e autêntica, desde sua identidade visual e redes sociais até seus websites e materiais de comunicação."
       }
     }
   },

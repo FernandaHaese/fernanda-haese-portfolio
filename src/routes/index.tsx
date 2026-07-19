@@ -176,7 +176,7 @@ function Home() {
             </SectionTitle>
             <p className="mt-4 text-muted-ink">{t("home:services.description")}</p>
           </div>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-2 sm:grid-rows-2 lg:grid-rows-2">
             {services.map((s) => (
               <ServiceCard key={s.id} service={s} />
             ))}

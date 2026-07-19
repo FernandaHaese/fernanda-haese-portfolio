@@ -1,19 +1,23 @@
 import { useTranslation } from "react-i18next";
-import { Code2, PanelsTopLeft, Shapes, type LucideIcon } from "lucide-react";
+import { Code2, PanelsTopLeft, MonitorSmartphone, Megaphone, type LucideIcon } from "lucide-react";
 import type { Service } from "@/data/services";
 import { cn } from "@/lib/utils";
 
 const servicePresentation: Record<string, { icon: LucideIcon; color: string }> = {
-  "digital-design": {
+  "ux-ui": {
     icon: PanelsTopLeft,
+    color: "bg-card",
+  },
+  "web-design": {
+    icon: MonitorSmartphone,
     color: "bg-card",
   },
   frontend: {
     icon: Code2,
     color: "bg-card",
   },
-  "brand-visual-design": {
-    icon: Shapes,
+  "digital-presence": {
+    icon: Megaphone,
     color: "bg-card",
   },
 };

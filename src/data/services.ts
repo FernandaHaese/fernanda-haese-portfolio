@@ -1,7 +1,8 @@
 export type Service = { id: string; translationKey: string };
 
 export const services: Service[] = [
-  { id: "digital-design", translationKey: "digitalDesign" },
+  { id: "ux-ui", translationKey: "uxui" },
+  { id: "web-design", translationKey: "webDesign" },
   { id: "frontend", translationKey: "frontend" },
-  { id: "brand-visual-design", translationKey: "brandVisual" },
+  { id: "digital-presence", translationKey: "digitalPresence" },
 ];

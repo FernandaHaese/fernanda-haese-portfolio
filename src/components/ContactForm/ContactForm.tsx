@@ -106,7 +106,7 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
           aria-invalid={!!errors.message}
           aria-describedby={errors.message ? "cf-message-err" : undefined}
           {...register("message")}
-          className={cn(inputBase, "resize-y min-h-[120px]")}
+          className={cn(inputBase, "resize-y min-h-120px")}
         />
         {errors.message && (
           <p id="cf-message-err" className="mt-1.5 text-sm text-destructive font-medium">
@@ -122,9 +122,7 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
       </div>
 
       <div aria-live="polite" className="min-h-6 text-center text-sm">
-        {status === "success" && (
-          <p className="text-ink font-semibold">{t("status.success")}</p>
-        )}
+        {status === "success" && <p className="text-ink font-semibold">{t("status.success")}</p>}
         {status === "error" && (
           <p className="text-destructive font-semibold">{t("status.error")}</p>
         )}

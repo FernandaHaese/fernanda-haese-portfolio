@@ -1,6 +1,5 @@
 // Isolated contact submission entry point.
-// TODO: integrate with Formspree / EmailJS / Resend / Supabase Edge Function.
-// Throws until an integration is wired so the UI never falsely reports success.
+import emailjs from "@emailjs/browser";
 
 export type ContactPayload = {
   name: string;
@@ -8,10 +7,30 @@ export type ContactPayload = {
   message: string;
 };
 
+const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
 export async function submitContactForm(payload: ContactPayload): Promise<void> {
-  await new Promise((r) => setTimeout(r, 700));
-  // Intentionally throw — no real backend configured.
-  // Replace this body with a real fetch() when the endpoint is available.
-  void payload;
-  throw new Error("Contact integration not configured");
+  if (!serviceId || !templateId || !publicKey) {
+    throw new Error("EmailJS configuration is missing");
+  }
+
+  await emailjs.send(
+    serviceId,
+    templateId,
+    {
+      name: payload.name,
+      email: payload.email,
+      message: payload.message,
+      time: new Date().toLocaleString("pt-BR"),
+    },
+    {
+      publicKey,
+      limitRate: {
+        id: "contact-form",
+        throttle: 10_000,
+      },
+    },
+  );
 }

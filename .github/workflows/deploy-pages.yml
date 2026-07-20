@@ -34,6 +34,10 @@ jobs:
 
       - name: Build and prerender
         run: npm run build
+        env:
+          VITE_EMAILJS_SERVICE_ID: ${{ vars.VITE_EMAILJS_SERVICE_ID }}
+          VITE_EMAILJS_TEMPLATE_ID: ${{ vars.VITE_EMAILJS_TEMPLATE_ID }}
+          VITE_EMAILJS_PUBLIC_KEY: ${{ vars.VITE_EMAILJS_PUBLIC_KEY }}
 
       - name: Create routing fallback
         run: cp dist/client/index.html dist/client/404.html

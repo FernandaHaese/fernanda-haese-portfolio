@@ -6,5 +6,8 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/fernanda-haese/",
     github: "https://github.com/FernandaHaese",
   },
-  cvPath: "/files/fernanda-haese-cv.pdf",
+  cvPaths: {
+    pt: "/files/cv-fernanda-haese-pt.pdf",
+    en: "/files/cv-fernanda-haese-en.pdf",
+  },
 } as const;

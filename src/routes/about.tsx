@@ -28,11 +28,14 @@ export const Route = createFileRoute("/about")({
 const mobileOrder = ["tools", "language", "development", "design"] as const;
 
 function About() {
-  const { t } = useTranslation(["about", "common"]);
+  const { t } = useTranslation(["home", "common"]);
 
   const orderedForMobile = mobileOrder
     .map((id) => skillGroups.find((g) => g.id === id))
     .filter((g): g is (typeof skillGroups)[number] => !!g);
+
+  const currentLanguage = i18n.resolvedLanguage?.startsWith("pt") ? "pt" : "en";
+  const cvPath = siteConfig.cvPaths[currentLanguage];
 
   return (
     <div className="pb-8">
@@ -57,7 +60,7 @@ function About() {
             <p className="mt-6 text-muted-ink leading-relaxed">{t("about:description")}</p>
             <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-3">
               <a
-                href={siteConfig.cvPath}
+                href={cvPath}
                 download
                 className="btn-hard btn-hard-hover bg-lilac px-4 py-2 font-semibold min-h-11"
               >

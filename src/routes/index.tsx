@@ -36,7 +36,7 @@ export const Route = createFileRoute("/")({
 });
 
 function Home() {
-  const { t } = useTranslation(["home", "common"]);
+  const { t, i18n } = useTranslation(["home", "common"]);
   const featured = projects.slice(0, 6);
   const finisherInitialized = useRef(false);
   const [filter, setFilter] = useState<"all" | ProjectCategory>("all");
@@ -86,6 +86,9 @@ function Home() {
       shapes: ["c"],
     });
   }, []);
+
+  const currentLanguage = i18n.resolvedLanguage?.startsWith("pt") ? "pt" : "en";
+  const cvPath = siteConfig.cvPaths[currentLanguage];
 
   return (
     <div className="pb-8">
@@ -140,7 +143,7 @@ function Home() {
             <p className="mt-6 text-muted-ink leading-relaxed">{t("home:about.description")}</p>
             <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-3">
               <a
-                href={siteConfig.cvPath}
+                href={cvPath}
                 download
                 className="btn-hard btn-hard-hover bg-lilac px-4 py-2 font-semibold min-h-11"
               >

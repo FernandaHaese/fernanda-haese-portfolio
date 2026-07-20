@@ -104,7 +104,7 @@ function Portfolio() {
               onClick={() => setVisible((v) => v + 6)}
               className="btn-hard btn-hard-hover bg-card px-5 py-2.5 font-semibold min-h-11"
             >
-              {t("portfolio:seeMore")}
+              {t("portfolio:viewMore")}
             </button>
           </div>
         )}

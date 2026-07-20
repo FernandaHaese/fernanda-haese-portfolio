@@ -5,7 +5,7 @@
   },
   "title": "Sobre Mim",
   "description": "Sou Designer Digital com experiência em UI/UX Design e desenvolvimento Front-end. Minha atuação une design e tecnologia para transformar necessidades reais em soluções digitais funcionais, claras e visualmente consistentes. Gosto de participar de todo o processo criativo, desde a pesquisa, concepção da ideia e definição da direção visual até a implementação e entrega da interface, produto ou peça de comunicação.",
-  "seeMore": "Ver mais +",
+  "viewMore": "Ver mais +",
   "skills": {
     "title": "Habilidades & Ferramentas",
     "groups": {
@@ -19,9 +19,9 @@
     "title": "Experiência",
     "items": {
       "frontendDev": {
-        "role": "Desenvolvedora Front-End",
-        "company": "Programa Bolsa Futuro Digital | Prefeitura de Niterói",
-        "description": "Participação no desenvolvimento da plataforma do programa Brotaí, atuando desde o levantamento de requisitos até a implementação da solução, incluindo modelagem de dados, criação de interfaces com foco em UX/UI, desenvolvimento front-end (React, TypeScript, HTML e CSS) e back-end (Node.js, Prisma ORM e SQLite), além de testes, validação e melhoria contínua do produto."
+        "role": "Residente em Tecnologia",
+        "company": "Programa Bolsa Futuro Digital, MCTI",
+        "description": "Participação no desenvolvimento da plataforma digital Brotaí, um programa da Prefeitura de Niterói, atuando desde o levantamento de requisitos até a implementação da solução, incluindo modelagem de dados, criação de interfaces com foco em UX/UI, desenvolvimento front-end (React, TypeScript, HTML e CSS) e back-end (Node.js, Prisma ORM e SQLite), além de testes, validação e melhoria contínua do produto."
       },
       "digitalDesigner": {
         "role": "Designer Digital",
@@ -35,7 +35,7 @@
     "items": {
       "react": {
         "course": "Desenvolvimento Front-End com React",
-        "institution": "Programa Bolsa Futuro Digital | MCTI e Softex"
+        "institution": "Programa Bolsa Futuro Digital, MCTI"
       },
       "fiap": {
         "course": "Tecnólogo em Design Digital",
@@ -47,11 +47,11 @@
       },
       "googleUx": {
         "course": "Certificado Profissional Google UX Design",
-        "institution": "Google | Coursera"
+        "institution": "Google & Coursera"
       },
       "cs50": {
         "course": "CS50: Introdução à Ciência da Computação",
-        "institution": "Universidade de Harvard | Coursera"
+        "institution": "Universidade de Harvard & Coursera"
       }
     }
   },

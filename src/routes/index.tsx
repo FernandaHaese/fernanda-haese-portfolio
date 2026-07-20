@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Plus } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { AnimatePresence, motion } from "framer-motion";
@@ -253,16 +253,16 @@ function Home() {
                 onClick={() => setVisible((v) => v + 6)}
                 className="btn-hard btn-hard-hover bg-card px-5 py-2.5 font-semibold min-h-11"
               >
-                {t("portfolio:seeMore")}
+                {t("portfolio:viewMore")}
               </button>
             </div>
           )}
           <div className="mt-10 flex justify-center">
             <Link
               to="/portfolio"
-              className="btn-hard btn-hard-hover bg-card px-5 py-2.5 font-semibold min-h-11"
+              className="btn-hard btn-hard-hover bg-card px-5 py-2.5 font-semibold min-h-11 inline-flex items-center gap-1.5"
             >
-              {t("common:buttons.seeMore")}
+              {t("common:buttons.viewMore")} <Plus className="h-4 w-4" aria-hidden />
             </Link>
           </div>
         </div>

@@ -9,9 +9,9 @@
   "buttons": {
     "getInTouch": "Get in Touch",
     "myWork": "Portfolio",
-    "seeMore": "See more +",
     "downloadCV": "Download CV",
-    "details": "Details",
+    "viewProject": "View project",
+    "details": "Explore more",
     "back": "Back",
     "submit": "Submit",
     "openMenu": "Open menu",

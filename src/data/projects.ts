@@ -83,7 +83,7 @@ export const projects: Project[] = [
     thumbnail: "/images/projects/website-helena-duarte/imagem-4.webp",
     gallery: [
       "/images/projects/website-helena-duarte/imagem-4.webp",
-      "/images/projects/website-helena-duarte/imagem-6.webp",
+      "/images/projects/website-helena-duarte/imagem-5.webp",
       "/images/projects/website-helena-duarte/imagem-2.webp",
       "/images/projects/website-helena-duarte/imagem-3.webp",
     ],

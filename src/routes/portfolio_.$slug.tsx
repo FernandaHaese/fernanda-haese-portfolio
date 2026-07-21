@@ -5,8 +5,9 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { SectionTitle } from "@/components/SectionTitle";
 import i18n from "@/i18n";
 import { projects } from "@/data/projects";
+import { cn } from "@/lib/utils";
 
-export const Route = createFileRoute("/portfolio/$slug")({
+export const Route = createFileRoute("/portfolio_/$slug")({
   loader: ({ params }) => {
     const project = projects.find((p) => p.slug === params.slug);
     if (!project) throw notFound();
@@ -56,11 +57,60 @@ function NotFound() {
   );
 }
 
+function ProjectImageGallery({
+  images,
+  title,
+  label,
+}: {
+  images?: string[];
+  title: string;
+  label: string;
+}) {
+  if (!images?.length) return null;
+
+  const singleImage = images.length === 1;
+
+  return (
+    <div
+      className={cn("mt-8 grid gap-4", singleImage ? "mx-auto max-w-3xl" : "sm:grid-cols-2")}
+      aria-label={label}
+    >
+      {images.map((image, index) => {
+        const isCenteredLastImage =
+          images.length > 1 && images.length % 2 !== 0 && index === images.length - 1;
+
+        return (
+          <img
+            key={image}
+            src={image}
+            alt={`${title} — ${label} ${index + 1}`}
+            width={1600}
+            height={1200}
+            loading="lazy"
+            className={cn(
+              "aspect-4/3 w-full rounded-xl border-2 border-ink object-cover",
+              isCenteredLastImage &&
+                "sm:col-span-2 sm:w-[calc(50%-0.5rem)] sm:justify-self-center",
+            )}
+          />
+        );
+      })}
+    </div>
+  );
+}
+
 function ProjectDetails() {
   const { project } = Route.useLoaderData();
   const { t } = useTranslation(["projects", "common"]);
   const router = useRouter();
   const key = `projects:items.${project.translationKey}`;
+  const skills = t(`${key}.skills`)
+    .split(",")
+    .map((skill) => skill.trim())
+    .filter(Boolean);
+
+  const tagClass =
+    "inline-flex items-center rounded-lg border-2 border-ink bg-card px-2.5 py-1 text-xs font-semibold ";
 
   const goBack = () => {
     if (window.history.length > 1) router.history.back();
@@ -68,8 +118,8 @@ function ProjectDetails() {
   };
 
   return (
-    <div className="pb-8 px-4 sm:px-6 pt-6 sm:pt-10">
-      <div className="mx-auto max-w-4xl">
+    <div className="pb-8 px-4 sm:px-6 pt-6 sm:pt-10 ">
+      <div className="mx-auto max-w-content">
         <button
           type="button"
           onClick={goBack}
@@ -81,11 +131,27 @@ function ProjectDetails() {
         {/* Overview card */}
         <AnimatedSection className="mt-6">
           <div className="card-hard p-6 sm:p-8">
-            <SectionTitle as="h1">{t(`${key}.title`)}</SectionTitle>
-            <p className="mt-5 text-muted-ink leading-relaxed">{t(`${key}.fullDescription`)}</p>
-            <hr className="my-6 border-ink/20" />
-            <dl className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 text-sm">
-              {(["client", "role", "timeline", "deliverables"] as const).map((k) => (
+            <div className="min-w-0 mb-6">
+              <SectionTitle as="h1">{t(`${key}.title`)}</SectionTitle>
+              <p className="mt-5 text-muted-ink leading-relaxed">{t(`${key}.fullDescription`)}</p>
+            </div>
+            {project.thumbnail && (
+              <img
+                src={project.thumbnail}
+                alt=""
+                width={1600}
+                height={1200}
+                className="mt-8 aspect-video w-full rounded-xl border-2 border-ink object-cover"
+              />
+            )}
+          </div>
+        </AnimatedSection>
+
+        {/* Specifications */}
+        <AnimatedSection className="mt-6">
+          <div className="card-hard p-6 sm:p-8">
+            <dl className="grid gap-6 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,0.8fr)_minmax(0,0.6fr)_minmax(0,1.8fr)] lg:justify-between ">
+              {(["role", "client", "timeline", "skills"] as const).map((k) => (
                 <div key={k}>
                   <dt className="text-xs font-bold tracking-wider text-muted-ink">
                     {t(`labels.${k}`)}
@@ -97,43 +163,19 @@ function ProjectDetails() {
           </div>
         </AnimatedSection>
 
-        {/* Brief + Research */}
-        <AnimatedSection className="mt-6 grid gap-6 md:grid-cols-2">
-          <div className="card-hard p-6">
-            <h2 className="text-xl font-extrabold">
-              <span className="title-highlight">{t("labels.brief")}</span>
-            </h2>
-            <p className="mt-4 text-muted-ink leading-relaxed">{t("shared.brief")}</p>
-          </div>
-          <div className="card-hard p-6">
-            <h2 className="text-xl font-extrabold">
-              <span className="title-highlight">{t("labels.research")}</span>
-            </h2>
-            <p className="mt-4 text-muted-ink leading-relaxed">{t("shared.research")}</p>
-          </div>
-        </AnimatedSection>
-
         {/* Process */}
         <AnimatedSection className="mt-6">
           <div className="card-hard p-6 sm:p-8">
             <h2 className="text-xl font-extrabold">
               <span className="title-highlight">{t("labels.process")}</span>
             </h2>
-            <ol className="mt-6 grid gap-6 md:grid-cols-3">
-              {[1, 2, 3].map((n) => (
-                <li key={n} className="flex gap-3">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-ink text-white font-bold text-sm">
-                    {n}
-                  </span>
-                  <div className="min-w-0">
-                    <h3 className="font-extrabold">{t(`shared.process.step${n}.title`)}</h3>
-                    <p className="text-sm text-muted-ink mt-1">
-                      {t(`shared.process.step${n}.description`)}
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ol>
+            <p className="mt-4 text-muted-ink leading-relaxed">{t(`${key}.process`)}</p>
+
+            <ProjectImageGallery
+              images={project.process}
+              title={t(`${key}.title`)}
+              label={t("labels.process")}
+            />
           </div>
         </AnimatedSection>
 
@@ -143,26 +185,13 @@ function ProjectDetails() {
             <h2 className="text-xl font-extrabold">
               <span className="title-highlight">{t("labels.result")}</span>
             </h2>
-            <p className="mt-4 text-muted-ink leading-relaxed">{t("shared.result")}</p>
+            <p className="mt-4 text-muted-ink leading-relaxed">{t(`${key}.result`)}</p>
 
-            {/* Gallery */}
-            {project.gallery && project.gallery.length > 0 ? (
-              <div className="mt-8 grid gap-4 sm:grid-cols-2" aria-label={t("labels.gallery")}>
-                {project.gallery.map((image, index) => (
-                  <img
-                    key={image}
-                    src={image}
-                    alt={`${t(`${key}.title`)} — ${index + 1}`}
-                    width={1600}
-                    height={1200}
-                    loading="lazy"
-                    className="w-full aspect-4/3 object-cover rounded-xl border-2 border-ink"
-                  />
-                ))}
-              </div>
-            ) : (
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">{/* placeholders atuais */}</div>
-            )}
+            <ProjectImageGallery
+              images={project.gallery}
+              title={t(`${key}.title`)}
+              label={t("labels.gallery")}
+            />
           </div>
         </AnimatedSection>
       </div>

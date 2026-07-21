@@ -10,10 +10,10 @@
     "ux-ui": "UX/UI",
     "web-design": "Web",
     "front-end": "Front-End",
-    "brand": "Identidade Visual",
+    "brand": "Id. Visual",
     "social-media": "Mídias Sociais",
     "other": "Outro"
   },
   "empty": "Nenhum projeto para este filtro ainda.",
-  "viewMore": "Ver mais +"
+  "viewMore": "Ver mais"
 }

@@ -7,10 +7,31 @@ export type Project = {
   categories: ProjectCategory[];
   thumbnail?: string;
   gallery?: string[];
+  process?: string[];
 };
 
 // TODO: substituir por projetos reais quando disponíveis
 export const projects: Project[] = [
+  {
+    slug: "brotai-platform",
+    translationKey: "brotaiPlatform",
+    categories: ["ux-ui", "front-end"],
+    thumbnail: "/images/projects/plataforma-brotai/imagem-8.webp",
+    gallery: [
+      "/images/projects/plataforma-brotai/imagem-8.webp",
+      "/images/projects/plataforma-brotai/imagem-7.webp",
+      "/images/projects/plataforma-brotai/imagem-6.webp",
+      "/images/projects/plataforma-brotai/imagem-5.webp",
+      "/images/projects/plataforma-brotai/imagem-9.webp",
+      "/images/projects/plataforma-brotai/imagem-10.webp",
+    ],
+    process: [
+      "/images/projects/plataforma-brotai/imagem-1.webp",
+      "/images/projects/plataforma-brotai/imagem-2.webp",
+      "/images/projects/plataforma-brotai/imagem-3.png",
+      "/images/projects/plataforma-brotai/imagem-4.png",
+    ],
+  },
   {
     slug: "website-ekovitra",
     translationKey: "websiteEkovitra",
@@ -23,6 +44,10 @@ export const projects: Project[] = [
       "/images/projects/website-ekovitra/imagem-12.webp",
       "/images/projects/website-ekovitra/imagem-9.webp",
     ],
+    process: [
+      "/images/projects/website-ekovitra/imagem-2.webp",
+      "/images/projects/website-ekovitra/imagem-3.webp",
+    ],
   },
   {
     slug: "sensen-games-website",
@@ -34,6 +59,10 @@ export const projects: Project[] = [
       "/images/projects/website-sensen-games/imagem-4.webp",
       "/images/projects/website-sensen-games/imagem-5.webp",
     ],
+    process: [
+      "/images/projects/website-sensen-games/imagem-2.webp",
+      "/images/projects/website-sensen-games/imagem-3.webp",
+    ],
   },
   {
     slug: "app-memorio",
@@ -41,11 +70,11 @@ export const projects: Project[] = [
     categories: ["ux-ui"],
     thumbnail: "/images/projects/aplicativo-memorio/imagem-2.webp",
     gallery: [
-      "/images/projects/aplicativo-memorio/imagem-2.webp",
       "/images/projects/aplicativo-memorio/imagem-3.webp",
+      "/images/projects/aplicativo-memorio/imagem-2.webp",
       "/images/projects/aplicativo-memorio/imagem-4.webp",
-      "/images/projects/aplicativo-memorio/imagem-1.webp",
     ],
+    process: ["/images/projects/aplicativo-memorio/imagem-8.png"],
   },
   {
     slug: "helena-duarte-website",
@@ -71,20 +100,6 @@ export const projects: Project[] = [
       "/images/projects/chatbot-nat/imagem-6.webp",
       "/images/projects/chatbot-nat/imagem-7.webp",
       "/images/projects/chatbot-nat/imagem-1.webp",
-    ],
-  },
-  {
-    slug: "brotai-platform",
-    translationKey: "brotaiPlatform",
-    categories: ["ux-ui", "front-end"],
-    thumbnail: "/images/projects/plataforma-brotai/imagem-8.webp",
-    gallery: [
-      "/images/projects/plataforma-brotai/imagem-8.webp",
-      "/images/projects/plataforma-brotai/imagem-11.webp",
-      "/images/projects/plataforma-brotai/imagem-12.webp",
-      "/images/projects/plataforma-brotai/imagem-5.webp",
-      "/images/projects/plataforma-brotai/imagem-4.webp",
-      "/images/projects/plataforma-brotai/imagem-3.webp",
     ],
   },
 ];

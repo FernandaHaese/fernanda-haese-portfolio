@@ -27,11 +27,11 @@
       },
       "frontend": {
         "title": "Desenvolvimento Front-End",
-        "description": "Desenvolvo interfaces responsivas e interativas com React, JavaScript e TypeScript, unindo qualidade técnica e atenção aos detalhes."
+        "description": "Desenvolvo interfaces responsivas e interativas com React, TypeScript e componentes reutilizáveis."
       },
       "digitalPresence": {
         "title": "Presença Digital",
-        "description": "Ajudo marcas a construirem uma presença online consistente e autêntica, desde sua identidade visual até suas redes sociais e websites."
+        "description": "Ajudo marcas a construirem uma presença online consistente e autêntica, da identidade visual e redes sociais ao design de sites."
       }
     }
   },

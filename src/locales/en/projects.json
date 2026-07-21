@@ -8,86 +8,78 @@
     "client": "CLIENT",
     "role": "ROLE",
     "timeline": "TIMELINE",
-    "deliverables": "DELIVERABLES",
+    "skills": "SKILLS",
     "brief": "The Brief",
-    "research": "Research & Discovery",
     "process": "Process",
     "result": "Result",
     "gallery": "Gallery"
   },
-  "shared": {
-    "brief": "Clarifying the problem, the audience and the constraints before writing a single line of code — the brief keeps the whole team pointed at the same outcome.",
-    "research": "User interviews, competitive analysis and heuristic reviews surface the real jobs to be done and the biggest opportunities to differentiate the product.",
-    "process": {
-      "step1": {
-        "title": "Discover",
-        "description": "Stakeholder interviews, benchmarks and information architecture."
-      },
-      "step2": {
-        "title": "Design",
-        "description": "Wireframes, prototypes and a scalable design system in Figma."
-      },
-      "step3": {
-        "title": "Deliver",
-        "description": "Front-end implementation, QA, hand-off and continuous improvement."
-      }
-    },
-    "result": "The final product ships with measurable improvements to the metrics that mattered — usability scores, conversion and team velocity — and a design system the team can keep evolving."
-  },
   "items": {
+    "brotaiPlatform": {
+      "title": "Brotaí Platform",
+      "shortDescription": "A digital platform designed to simplify access to information, applications, attendance management, and administrative processes for the Brotaí program.",
+      "fullDescription": "I am part of the collaborative development of a digital platform for Brotaí, a social program run by the City of Niterói that provides free cultural and technical education to local residents. The solution brings together dedicated workflows for participants, instructors, and administrators, centralizing information, applications, classes, attendance records, and administrative activities. My main contribution is focused on front-end development, with additional involvement in back-end development and data modeling.",
+      "client": "Brotaí, City of Niterói",
+      "role": "Front-End Developer & Back-End Contributor",
+      "timeline": "2026 — In Progress",
+      "skills": "UX/UI Design, Front-End Development, Figma, React, JavaScript, Node.js, Prisma ORM, SQLite",
+      "process": "The process began with requirements gathering and the mapping of user profiles, workflows, business rules, and data requirements. The team defined the platform’s features and data model, created responsive interfaces for participants, instructors, and administrators, and integrated the front end with the back end while continuously testing and refining the main workflows.",
+      "result": "The platform is currently under development and already brings the program’s essential workflows together in a centralized solution. The project is now undergoing validation, refinement, and preparation for deployment."
+    },
     "websiteEkovitra": {
-      "title": "Website Ekovitra",
-      "shortDescription": "Responsive corporate website showcasing sustainable construction solutions and strengthening the company's digital presence.",
-      "fullDescription": "Designed and developed a fully responsive website for a sustainable construction company based in Manaus, Brazil. The project focused on creating a modern digital experience that communicates the company's commitment to innovation, sustainability, and high-quality construction through intuitive navigation, clean visuals, and optimized performance across all devices.",
+      "title": "Ekovitra Website",
+      "shortDescription": "A responsive corporate website designed to showcase sustainable construction solutions and strengthen the company’s digital presence.",
+      "fullDescription": "I designed and developed the corporate website for Ekovitra, a sustainable construction company based in Manaus, Brazil. The main challenge was to transform technical information about its construction system into a clear, trustworthy, and accessible experience aligned with the brand’s values of innovation and sustainability. My work covered the entire process, from content organization and page architecture to interface design and responsive front-end implementation.",
       "client": "Ekovitra",
       "role": "UX/UI Designer & Front-End Developer",
       "timeline": "2025",
-      "deliverables": "UX Research, UI Design, Responsive Development, React, TypeScript, Vite, Tailwind CSS, shadcn/ui"
+      "skills": "Web Design, Front-End Development, React, TypeScript, Vite, Tailwind CSS",
+      "process": "The process began with organizing the company’s information, developing an understanding of the sustainable construction industry, and analyzing visual and functional references. Based on this research, I defined the page hierarchy and navigation flows, developed the visual direction and responsive layouts, and implemented the interface with React and TypeScript for desktop, tablet, and mobile devices.",
+      "result": "The result was a modern, responsive corporate website that presents the company’s solutions clearly and strengthens its digital presence through a visual language aligned with innovation and sustainability."
     },
     "memorioApp": {
       "title": "Memório App",
-      "shortDescription": "A digital journaling app designed to help users record their emotions, daily reflections, and meaningful memories in one place.",
-      "fullDescription": "Designed the UX/UI for Memório, a digital journaling application created as an academic project during the Digital Design program at FIAP. The app was designed to provide a simple and welcoming space for users to record their daily emotions, write personal reflections, and save meaningful moments through photos. The project focused on creating an intuitive and emotionally engaging experience, supported by a warm visual identity, clear information hierarchy, and user-friendly interactions. All interface screens and visual solutions were designed in Figma.",
+      "shortDescription": "A digital journal app designed to help users record emotions, daily reflections, and meaningful memories in one place.",
+      "fullDescription": "I developed the UX/UI project for Memório during the Digital Design program at FIAP. The goal was to create a digital journal that brought emotional records, personal reflections, and photographs together in a single space. The main challenge was to balance ease of use, clear information organization, and a visual language that conveyed warmth without compromising the clarity of the interface.",
       "client": "Academic Project — FIAP",
       "role": "UX/UI Designer",
       "timeline": "2025",
-      "deliverables": "UX/UI Design, User Interface Design, Interaction Design, Visual Design, Figma"
+      "skills": "UX/UI Design, Prototyping, Figma",
+      "process": "I researched journal and well-being applications, organized the main features, and defined the information architecture and key user flows. I then developed the visual identity, interface screens, and an interactive prototype in Figma, prioritizing clear hierarchy, simple interactions, and consistency across the different types of entries.",
+      "result": "The project resulted in a cohesive, interactive prototype that brings emotions, written reflections, and photographs together in an organized and emotionally supportive experience."
     },
     "helenaDuarteWebsite": {
       "title": "Helena Duarte Website",
-      "shortDescription": "A fictional professional website combining editorial design and responsive development for a business law and data protection specialist.",
-      "fullDescription": "Designed and developed a fictional professional website for Helena Duarte, a fictional lawyer specializing in Business Law and Data Protection. The project was created as a portfolio demonstration, with the character, portrait, credentials, contact information, publications, and events developed exclusively for the concept. The website was designed to communicate authority, expertise, and trust through a refined visual identity, editorial-inspired typography, clear content hierarchy, and responsive layouts across desktop and mobile devices. I was responsible for both the interface design and the front-end implementation.",
-      "client": "Personal / Concept Project",
-      "role": "UX/UI Designer & Front-End Developer",
+      "shortDescription": "A fictional professional website combining editorial design and responsive development for a specialist in Corporate Law and Data Protection.",
+      "fullDescription": "I created an end-to-end conceptual project for Helena Duarte, a fictional lawyer specializing in Corporate Law and Data Protection. The case study was developed to explore how content strategy, editorial design, and front-end development can work together to build a strong professional presence. The character, portrait, credentials, publications, events, and contact details were created exclusively for the concept.",
+      "client": "Personal / Conceptual Project",
+      "role": "Web Designer & Front-End Developer",
       "timeline": "2025",
-      "deliverables": "UX/UI Design, Responsive Web Design, Front-End Development, React, TypeScript, Vite, Tailwind CSS, shadcn/ui"
+      "skills": "Web Design, Front-End Development, React, TypeScript, Vite, Tailwind CSS",
+      "process": "I defined the character’s professional positioning, organized the content strategy, and analyzed references from legal websites and editorial design projects. Based on this research, I developed the visual identity, typography, and responsive layouts before implementing the interface with React, TypeScript, and reusable components.",
+      "result": "The result is a complete case study demonstrating the integration of content, visual identity, user experience, and front-end development in a consistent professional digital presence."
     },
     "sensenGamesWebsite": {
       "title": "Sensen Games Website",
-      "shortDescription": "A responsive official website for a Brazilian indie game studio, showcasing its games, story, and creative identity to a global audience.",
-      "fullDescription": "Collaboratively designed and developed the official website for Sensen Games, a Brazilian indie game studio founded by two brothers who have shared a passion for video games since the Super Nintendo and PlayStation eras. The project was developed as part of the Bolsa Futuro Digital program, an initiative by Softex in partnership with the Brazilian Ministry of Education, during a Front-End Development training program focused on React. The website was created for the real studio and designed to communicate its identity, history, and games through an engaging and responsive digital experience. The project included multilingual support in Portuguese and English, SPA navigation, SEO optimization, responsive interfaces, and a contact form with email integration. Development was carried out as part of a collaborative team.",
+      "shortDescription": "An official, responsive, and bilingual website for a Brazilian indie game studio, created to introduce its games, story, and creative identity to a global audience.",
+      "fullDescription": "I contributed to the collaborative design and development of the official website for Sensen Games, a Brazilian indie game studio. The project was completed during the Bolsa Futuro Digital program, an initiative by Softex in partnership with Brazil’s Ministry of Education, as part of a React-focused Front-End Development course. The goal was to translate the studio’s creative identity into an engaging, responsive experience designed for both Portuguese- and English-speaking audiences.",
       "client": "Sensen Games",
-      "role": "UI Designer & Front-End Developer",
+      "role": "UX/UI Designer & Front-End Developer",
       "timeline": "2025",
-      "deliverables": "Front-End Development, Responsive Web Design, React, TypeScript, Vite, Tailwind CSS, shadcn/ui, React Router DOM, i18next, React Helmet Async, Lucide React, EmailJS"
+      "skills": "UX/UI Design, Front-End Development, React, TypeScript, Vite, Tailwind CSS, i18next, SEO, EmailJS",
+      "process": "The team aligned on the studio’s needs, defined the project scope, organized the content, and distributed responsibilities. I contributed to the creation and refinement of the responsive layouts and to the React implementation, including SPA navigation, internationalization with i18next, SEO optimization, and a contact form integrated with EmailJS.",
+      "result": "The project delivered an official, responsive, and bilingual website that brings together the studio’s story, games, and creative identity in a consistent digital experience developed collaboratively."
     },
     "natPlusChatbot": {
       "title": "Nat+ Chatbot",
-      "shortDescription": "A conversational AI concept designed to transform Natura's virtual assistant into a personalized and empathetic digital beauty consultant.",
-      "fullDescription": "Collaboratively designed and prototyped Nat+, a conversational AI concept developed for the 2025 FIAP Challenge in partnership with Natura. The project proposed an evolution of Natura's existing virtual assistant, transforming it from a primarily operational tool into a personalized digital beauty consultant capable of understanding users, providing product recommendations, and supporting their shopping journey with a more human and empathetic experience. The concept explored personalized skincare and beauty recommendations based on users' preferences, routines, goals, and ingredients they wish to avoid, as well as features such as skin tone analysis, personalized product suggestions, post-purchase follow-ups, and proactive alerts. I was primarily responsible for UX/UI Design, creating the chatbot interfaces and interaction flows. I also implemented the designed experience as a functional chatbot prototype using GPTMaker, allowing the concept and conversational flows to be tested in practice.",
+      "shortDescription": "An AI-powered beauty assistant concept designed to make product recommendations more personalized, approachable, and relevant.",
+      "fullDescription": "As part of a team, I developed Nat+, a conversational AI concept created for the FIAP Challenge 2025 in partnership with Natura. The proposal was to evolve the brand’s existing virtual assistant from a primarily operational tool into a digital beauty consultant capable of understanding users’ preferences, routines, and goals. My contribution focused on UX/UI Design, interaction flows, and the functional prototyping of the chatbot.",
       "client": "FIAP Challenge 2025 × Natura",
-      "role": "UX/UI Designer & Chatbot Prototyper",
+      "role": "UX/UI Designer",
       "timeline": "2025",
-      "deliverables": "UX/UI Design, Conversational Design, Interaction Design, User Flows, Chatbot Prototyping, GPTMaker, Figma"
-    },
-    "brotaiPlatform": {
-      "title": "Brotaí Platform",
-      "shortDescription": "A digital platform designed to simplify access to educational programs, course enrollment, attendance management, and administrative workflows for the Brotaí program.",
-      "fullDescription": "Collaboratively designed and developed a digital platform for Brotaí, a social program by the Municipality of Niterói that provides free cultural and technical education to the local community. The platform was created to centralize information about the program and simplify the enrollment process for participants, while also providing dedicated workflows for teachers and program managers. Teachers can access their classes, register and view student attendance, and manage class-related information. Program managers can access relevant data, register information, and perform administrative tasks through an accessible centralized system. Developed as part of a Technology Residency within the Bolsa Futuro Digital program, an initiative by Softex with support from Brazil's Ministry of Education. My primary role was Front-End Developer, contributing to the development of the interface and also supporting Back-End development and data modeling. The project is currently in progress and scheduled for deployment.",
-      "client": "Brotaí — Municipality of Niterói",
-      "role": "Front-End Developer & Back-End Contributor",
-      "timeline": "2026 — Ongoing",
-      "deliverables": "Front-End Development, Back-End Development, React, Vite, JavaScript, Node.js, Prisma ORM, SQLite3, Lucide React"
+      "skills": "UX/UI Design, Prototyping, GPTMaker, Figma",
+      "process": "We analyzed the beauty and skincare customer journey and identified opportunities for personalization. We then mapped usage scenarios and conversational flows, designed the chatbot’s interfaces and interactions in Figma, and implemented a functional prototype in GPTMaker to validate the concept in practice.",
+      "result": "The result was a functional prototype demonstrating how artificial intelligence, personalization, and conversational design can make product discovery more relevant and engaging."
     }
   }
 }

@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound, useRouter } from "@tanstack/react-router";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { SectionTitle } from "@/components/SectionTitle";
@@ -89,8 +89,7 @@ function ProjectImageGallery({
             loading="lazy"
             className={cn(
               "aspect-4/3 w-full rounded-xl border-2 border-ink object-cover",
-              isCenteredLastImage &&
-                "sm:col-span-2 sm:w-[calc(50%-0.5rem)] sm:justify-self-center",
+              isCenteredLastImage && "sm:col-span-2 sm:w-[calc(50%-0.5rem)] sm:justify-self-center",
             )}
           />
         );
@@ -192,6 +191,20 @@ function ProjectDetails() {
               title={t(`${key}.title`)}
               label={t("labels.gallery")}
             />
+            <div className="mt-7 sm:flex sm:flex-wrap sm:items-center sm:justify-center">
+              {" "}
+              {project.liveUrl && (
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-hard btn-hard-hover bg-lilac inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold min-h-9"
+                >
+                  {t("common:buttons.visit")}
+                  <ArrowRight className="h-4 w-4" aria-hidden />
+                </a>
+              )}
+            </div>
           </div>
         </AnimatedSection>
       </div>

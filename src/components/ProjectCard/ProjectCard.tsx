@@ -8,7 +8,6 @@ export function ProjectCard({ project }: { project: Project }) {
   const key = `items.${project.translationKey}`;
   return (
     <article className="card-hard overflow-hidden flex flex-col h-full">
-      {/* TODO: substituir pela imagem real do projeto */}
       {project.thumbnail ? (
         <img
           src={project.thumbnail}
@@ -24,14 +23,27 @@ export function ProjectCard({ project }: { project: Project }) {
       <div className="p-5 sm:p-6 flex flex-col gap-3 flex-1">
         <h3 className="text-lg sm:text-xl font-extrabold text-ink">{t(`${key}.title`)}</h3>
         <p className="text-sm text-muted-ink flex-1">{t(`${key}.shortDescription`)}</p>
-        <Link
-          to="/portfolio/$slug"
-          params={{ slug: project.slug }}
-          className="btn-hard btn-hard-hover bg-lilac text-ink inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold self-start min-h-9"
-        >
-          {t("common:buttons.details")}
-          <ArrowRight className="h-4 w-4" aria-hidden />
-        </Link>
+        <div className="flex flex-wrap items-center gap-2">
+          <Link
+            to="/portfolio/$slug"
+            params={{ slug: project.slug }}
+            className="btn-hard btn-hard-hover bg-lilac text-ink items-center  px-3 py-1.5 text-sm font-semibold min-h-9"
+          >
+            {t("common:buttons.details")}
+          </Link>
+
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hard btn-hard-hover bg-card text-ink inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold min-h-9"
+            >
+              {t("common:buttons.visit")}
+              <ArrowRight className="h-4 w-4" aria-hidden />
+            </a>
+          )}
+        </div>
       </div>
     </article>
   );

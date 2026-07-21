@@ -8,6 +8,7 @@ export type Project = {
   thumbnail?: string;
   gallery?: string[];
   process?: string[];
+  liveUrl?: string;
 };
 
 // TODO: substituir por projetos reais quando disponíveis
@@ -48,6 +49,7 @@ export const projects: Project[] = [
       "/images/projects/website-ekovitra/imagem-2.webp",
       "/images/projects/website-ekovitra/imagem-3.webp",
     ],
+    liveUrl: "https://ekovitra.com/",
   },
   {
     slug: "sensen-games-website",
@@ -63,6 +65,7 @@ export const projects: Project[] = [
       "/images/projects/website-sensen-games/imagem-2.webp",
       "/images/projects/website-sensen-games/imagem-3.webp",
     ],
+    liveUrl: "https://fernandahaese.github.io/Sensen-Games/",
   },
   {
     slug: "app-memorio",
@@ -87,6 +90,7 @@ export const projects: Project[] = [
       "/images/projects/website-helena-duarte/imagem-2.webp",
       "/images/projects/website-helena-duarte/imagem-3.webp",
     ],
+    liveUrl: "https://fernandahaese.github.io/Helena-Duarte/",
   },
   {
     slug: "nat-plus-chatbot",
@@ -101,6 +105,7 @@ export const projects: Project[] = [
       "/images/projects/chatbot-nat/imagem-7.webp",
       "/images/projects/chatbot-nat/imagem-1.webp",
     ],
+    liveUrl: "https://fernandahaese.github.io/Projeto-Natura/",
   },
 ];
 

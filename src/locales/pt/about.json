@@ -13,6 +13,33 @@
       "design": "Design",
       "tools": "Ferramentas",
       "language": "Idiomas"
+    },
+    "items": {
+      "htmlCss": "HTML/CSS",
+      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "react": "React",
+      "bootstrap": "Bootstrap",
+      "tailwind": "Tailwind CSS",
+      "git": "Git",
+      "github": "GitHub",
+      "uxUi": "UX/UI",
+      "webDesign": "Design Web",
+      "wireframing": "Wireframes",
+      "prototyping": "Prototipação",
+      "responsiveness": "Responsividade",
+      "accessibility": "Acessibilidade",
+      "visualId": "Identidade Visual",
+      "socialMedia": "Mídias Sociais",
+      "figma": "Figma",
+      "framer": "Framer",
+      "photoshop": "Photoshop",
+      "illustrator": "Illustrator",
+      "premiere": "Premiere",
+      "canva": "Canva",
+      "englishFluent": "Inglês (Fluente)",
+      "portugueseFluent": "Português (Fluente)",
+      "spanishBasic": "Espanhol (Básico)"
     }
   },
   "experience": {

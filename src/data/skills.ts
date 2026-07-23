@@ -6,18 +6,36 @@ export type SkillGroup = {
 export const skillGroups: SkillGroup[] = [
   {
     id: "development",
-    items: ["HTML/CSS", "Javascript", "Typescript", "React", "Boostrap", "Tailwind", "Git", "Github"],
+    items: [
+      "htmlCss",
+      "javascript",
+      "typescript",
+      "react",
+      "bootstrap",
+      "tailwind",
+      "git",
+      "github",
+    ],
   },
   {
     id: "design",
-    items: ["UX/UI", "Wireframing", "Prototyping", "Design System", "Responsivity", "Acessiblity"],
+    items: [
+      "uxUi",
+      "webDesign",
+      "wireframing",
+      "prototyping",
+      "responsiveness",
+      "accessibility",
+      "visualId",
+      "socialMedia",
+    ],
   },
   {
     id: "tools",
-    items: ["Figma", "Framer", "Photoshop", "Illustrator", "Premiere", "Canva"],
+    items: ["figma", "framer", "photoshop", "illustrator", "premiere", "canva"],
   },
   {
     id: "language",
-    items: ["English (Fluent)", "Portuguese (Fluent)", "Spanish (Basic)"],
+    items: ["englishFluent", "portugueseFluent", "spanishBasic"],
   },
 ];

@@ -135,6 +135,39 @@
       "skills": "UX/UI Design, Arquitetura da Informação, Wireframes, Prototipação, Figma",
       "process": "O processo começou com esboços feitos à mão para explorar a estrutura das telas e os principais fluxos de navegação. Essas ideias evoluíram para wireframes e um protótipo de baixa fidelidade, que ajudaram a organizar o conteúdo e as funcionalidades. Em seguida, desenvolvi no Figma a identidade visual, os componentes e o protótipo de alta fidelidade, conectando os fluxos de acervo, artistas, visita, ingressos e demais recursos do aplicativo.",
       "result": "O resultado foi um protótipo de alta fidelidade navegável, com identidade visual coesa e fluxos organizados para tornar a descoberta de obras, artistas e informações da galeria mais clara, fluida e intuitiva."
+    },
+    "idEkovitra": {
+      "title": "Identidade Visual: Ekovitra",
+      "shortDescription": "Identidade visual desenvolvida para traduzir inovação, tecnologia e sustentabilidade no posicionamento de uma construtora amazonense.",
+      "fullDescription": "Desenvolvi a identidade visual da Ekovitra, uma empresa de construção sustentável sediada no Amazonas. O objetivo foi criar uma marca contemporânea e reconhecível que comunicasse sua atuação com sistemas construtivos inovadores e seu compromisso com soluções mais sustentáveis. Essa identidade se tornou a base visual para os demais pontos de contato da empresa, incluindo o website institucional e os conteúdos para redes sociais.",
+      "client": "Ekovitra",
+      "role": "Brand Designer",
+      "timeline": "2026",
+      "skills": "Brand Design, Identidade Visual, Logo Design, Figma, Illustrator",
+      "process": "O processo partiu dos principais atributos da marca (inovação, construção e sustentabilidade) e da busca por um símbolo simples e versátil. A solução combina a inicial “e” com a forma de uma folha, criando uma associação direta entre a Ekovitra e sua proposta ambiental. A partir desse conceito, desenvolvi as versões do logotipo, a paleta em tons de verde e cores escuras, a tipografia e as regras de aplicação.",
+      "result": "O resultado foi um sistema visual consistente e flexível, documentado em um manual de marca e preparado para funcionar em diferentes escalas, fundos e formatos. A identidade conecta os materiais institucionais, o website e as redes sociais em uma presença de marca única e reconhecível."
+    },
+    "idVivaInovacoes": {
+      "title": "Rebranding: Viva Inovações",
+      "shortDescription": "Rebranding criado para uma empresa de educação e tecnologia que oferece cursos online para diferentes temas e faixas etárias.",
+      "fullDescription": "Desenvolvi o rebranding da Viva Inovações Educacionais, empresa que atua na interseção entre educação e tecnologia com cursos online para públicos diversos. O desafio foi atualizar a marca sem perder sua proximidade, construindo uma identidade capaz de equilibrar credibilidade, acessibilidade e uma experiência de aprendizado mais leve, inclusiva e estimulante.",
+      "client": "Viva Inovações Educacionais",
+      "role": "Brand Designer",
+      "timeline": "2024",
+      "skills": "Brand Design, Rebranding, Identidade Visual, Logo Design, Figma, Illustrator",
+      "process": "O processo começou pela revisão do posicionamento e dos valores da marca, como praticidade, alegria, leveza e inclusão. A pipa foi mantida e refinada como elemento central por representar movimento, descoberta e evolução. Em seguida, desenvolvi novas proporções e variações do logotipo, uma paleta vibrante, o sistema tipográfico e as orientações de uso para garantir consistência em ambientes digitais e materiais institucionais.",
+      "result": "O resultado foi uma identidade renovada, versátil e mais alinhada ao universo da educação digital. O manual reúne versões horizontais e verticais, aplicações coloridas e monocromáticas, tipografia, paleta e regras de uso, oferecendo uma base consistente para diferentes cursos, públicos e plataformas."
+    },
+    "idNucleoSaber": {
+      "title": "Identidade Visual: Núcleo Saber",
+      "shortDescription": "Identidade visual criada para uma empresa de cursos online que promove o conhecimento em diferentes áreas e dimensões.",
+      "fullDescription": "Desenvolvi a identidade visual do Núcleo Saber, empresa especializada em cursos online para múltiplas áreas. A proposta foi representar uma marca que reúne diferentes campos do conhecimento em torno de um mesmo núcleo, transmitindo diversidade, organização, confiança e abertura para o aprendizado contínuo.",
+      "client": "Núcleo Saber",
+      "role": "Brand Designer",
+      "timeline": "2024",
+      "skills": "Brand Design, Identidade Visual, Logo Design, Figma, Illustrator",
+      "process": "O conceito visual foi construído a partir de formas modulares que remetem a livros, caminhos e áreas do conhecimento conectadas em torno de um centro comum. Desenvolvi o logotipo, uma paleta multicolorida para representar a diversidade dos cursos, a tipografia, a iconografia e um conjunto de formas de apoio capazes de organizar e diferenciar a comunicação da marca.",
+      "result": "O resultado foi um sistema visual amplo e adaptável, documentado em um manual de identidade. A combinação entre estrutura modular, cores vibrantes e elementos gráficos permite que a marca se comunique com consistência em diferentes áreas, conteúdos e plataformas educacionais."
     }
   }
 }

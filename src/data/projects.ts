@@ -165,6 +165,48 @@ export const projects: Project[] = [
       "/images/projects/app-galeria-artte/imagem-02.png",
     ],
   },
+  {
+    slug: "id-ekovitra",
+    translationKey: "idEkovitra",
+    categories: ["brand"],
+    thumbnail: "/images/projects/id-ekovitra/imagem-04.png",
+    gallery: [
+      "/images/projects/id-ekovitra/imagem-01.png",
+      "/images/projects/id-ekovitra/imagem-02.png",
+      "/images/projects/id-ekovitra/imagem-03.png",
+      "/images/projects/id-ekovitra/imagem-04.png",
+      "/images/projects/id-ekovitra/imagem-06.png",
+      "/images/projects/id-ekovitra/imagem-07.png",
+      "/images/projects/id-ekovitra/imagem-08.png",
+    ],
+  },
+  {
+    slug: "id-viva-inovacoes",
+    translationKey: "idVivaInovacoes",
+    categories: ["brand"],
+    thumbnail: "/images/projects/id-viva-inovacoes/imagem-01.png",
+    gallery: [
+      "/images/projects/id-viva-inovacoes/imagem-01.png",
+      "/images/projects/id-viva-inovacoes/imagem-03.png",
+      "/images/projects/id-viva-inovacoes/imagem-04.png",
+      "/images/projects/id-viva-inovacoes/imagem-05.png",
+    ],
+  },
+  {
+    slug: "id-nucleo-saber",
+    translationKey: "idNucleoSaber",
+    categories: ["brand"],
+    thumbnail: "/images/projects/id-nucleo-saber/imagem-01.png",
+    gallery: [
+      "/images/projects/id-nucleo-saber/imagem-01.png",
+      "/images/projects/id-nucleo-saber/imagem-02.png",
+      "/images/projects/id-nucleo-saber/imagem-03.png",
+      "/images/projects/id-nucleo-saber/imagem-04.png",
+      "/images/projects/id-nucleo-saber/imagem-05.png",
+      "/images/projects/id-nucleo-saber/imagem-06.png",
+      "/images/projects/id-nucleo-saber/imagem-07.png",
+    ],
+  },
 ];
 
 const categories: ProjectCategory[] = [

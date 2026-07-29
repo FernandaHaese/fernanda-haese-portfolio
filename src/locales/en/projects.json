@@ -135,6 +135,39 @@
       "skills": "UX/UI Design, Information Architecture, Wireframing, Prototyping, Figma",
       "process": "The process began with hand-drawn sketches used to explore the screen structure and main navigation flows. These ideas evolved into wireframes and a low-fidelity prototype that helped organize the content and features. I then developed the visual identity, components, and high-fidelity prototype in Figma, connecting the collection, artists, visit planning, ticketing, and other app flows.",
       "result": "The result was an interactive high-fidelity prototype with a cohesive visual identity and structured flows designed to make discovering artworks, artists, and gallery information clearer, smoother, and more intuitive."
+    },
+    "idEkovitra": {
+      "title": "Ekovitra: Visual Identity",
+      "shortDescription": "A visual identity designed to express innovation, technology, and sustainability in the positioning of an Amazon-based construction company.",
+      "fullDescription": "I developed the visual identity for Ekovitra, a sustainable construction company based in the Brazilian state of Amazonas. The goal was to create a contemporary and recognizable brand that communicated its work with innovative building systems and its commitment to more sustainable solutions. This identity became the visual foundation for the company’s other touchpoints, including its corporate website and social media content.",
+      "client": "Ekovitra",
+      "role": "Brand Designer",
+      "timeline": "2026",
+      "skills": "Brand Design, Visual Identity, Logo Design, Figma, Illustrator",
+      "process": "The process began with the brand’s core attributes (innovation, construction, and sustainability) and the search for a simple, versatile symbol. The solution combines the letter “e” with the shape of a leaf, creating a direct connection between Ekovitra and its environmental positioning. From this concept, I developed the logo variations, green and dark color palette, typography, and application rules.",
+      "result": "The result was a consistent and flexible visual system, documented in a set of brand guidelines and designed to work across different scales, backgrounds, and formats. The identity connects the company’s institutional materials, website, and social media into one recognizable brand presence."
+    },
+    "idVivaInovacoes": {
+      "title": "Viva Inovações: Rebranding",
+      "shortDescription": "A rebranding project for an education and technology company offering online courses across different subjects and age groups.",
+      "fullDescription": "I developed the rebranding for Viva Inovações Educacionais, a company operating at the intersection of education and technology with online courses for diverse audiences. The challenge was to modernize the brand without losing its approachable character, creating an identity that balanced credibility and accessibility with a lighter, more inclusive, and engaging learning experience.",
+      "client": "Viva Inovações Educacionais",
+      "role": "Brand Designer",
+      "timeline": "2024",
+      "skills": "Brand Design, Rebranding, Visual Identity, Logo Design, Figma, Illustrator",
+      "process": "The process began by reviewing the brand’s positioning and values, including practicality, joy, lightness, and inclusion. The kite was retained and refined as the central element, representing movement, discovery, and growth. I then developed new logo proportions and variations, a vibrant color palette, the typographic system, and usage guidance to ensure consistency across digital environments and institutional materials.",
+      "result": "The result was a renewed, versatile identity better aligned with digital education. The brand guidelines bring together horizontal and vertical versions, color and monochrome applications, typography, palette, and usage rules, providing a consistent foundation for different courses, audiences, and platforms."
+    },
+    "idNucleoSaber": {
+      "title": "Núcleo Saber: Visual Identity",
+      "shortDescription": "A visual identity created for an online education company dedicated to promoting knowledge across different fields and dimensions.",
+      "fullDescription": "I developed the visual identity for Núcleo Saber, a company specializing in online courses across multiple subject areas. The goal was to represent a brand that brings different fields of knowledge together around a shared core while communicating diversity, organization, trust, and openness to continuous learning.",
+      "client": "Núcleo Saber",
+      "role": "Brand Designer",
+      "timeline": "2024",
+      "skills": "Brand Design, Visual Identity, Logo Design, Illustrator, Figma",
+      "process": "The visual concept was built around modular forms suggesting books, pathways, and fields of knowledge connected around a common center. I developed the logo, a multicolored palette representing the variety of courses, the typography, iconography, and a set of supporting shapes designed to organize and differentiate the brand’s communication.",
+      "result": "The result was a broad and adaptable visual system documented in a set of brand guidelines. The combination of modular structure, vibrant colors, and graphic elements allows the brand to communicate consistently across different subject areas, content types, and educational platforms."
     }
   }
 }

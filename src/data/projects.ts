@@ -207,6 +207,27 @@ export const projects: Project[] = [
       "/images/projects/id-nucleo-saber/imagem-07.png",
     ],
   },
+  {
+    slug: "ppt-36zero",
+    translationKey: "ppt36zero",
+    categories: ["other"],
+    thumbnail: "/images/projects/ppt-36zero/imagem-02.png",
+    gallery: [
+      "/images/projects/ppt-36zero/imagem-01.png",
+      "/images/projects/ppt-36zero/imagem-02.png",
+      "/images/projects/ppt-36zero/imagem-03.png",
+    ],
+  },
+  {
+    slug: "cartao-de-visita-advocia",
+    translationKey: "cartaoDeVisitaAdvocia",
+    categories: ["other"],
+    thumbnail: "/images/projects/cartao-de-visita-advocacia/imagem-01.png",
+    gallery: [
+      "/images/projects/cartao-de-visita-advocacia/imagem-01.png",
+      "/images/projects/cartao-de-visita-advocacia/imagem-02.png",
+    ],
+  },
 ];
 
 const categories: ProjectCategory[] = [

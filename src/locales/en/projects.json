@@ -124,6 +124,17 @@
       "skills": "Social Media Design, Canva, Video Editing",
       "process": "The process began by defining the audience, tone of voice, and main content themes, including adoption, animal care, and awareness. I then developed the visual identity for the publications and created assets for posts and stories, combining color, typography, imagery, and graphic elements to convey warmth, trust, and sensitivity.",
       "result": "The result was a cohesive conceptual content series adaptable to different formats, demonstrating how design can make an animal shelter’s communication clearer, more human, and more inviting."
+    },
+    "appGaleriaArtte": {
+      "title": "Galeria Artte App",
+      "shortDescription": "A mobile app prototype designed to make exploring the collection and planning a visit to a fictional art gallery easier.",
+      "fullDescription": "I designed the Galeria Artte app as part of the Google UX Design Professional Certificate. The goal was to bring the essential information about a fictional art gallery into a single experience, allowing visitors to explore the collection and artists, check the location and opening hours, and access ticket information. The project also explores features such as QR codes, educational activities, and an artwork purchasing flow.",
+      "client": "Academic Project — Google UX Design",
+      "role": "UX/UI Designer",
+      "timeline": "2023",
+      "skills": "UX/UI Design, Information Architecture, Wireframing, Prototyping, Figma",
+      "process": "The process began with hand-drawn sketches used to explore the screen structure and main navigation flows. These ideas evolved into wireframes and a low-fidelity prototype that helped organize the content and features. I then developed the visual identity, components, and high-fidelity prototype in Figma, connecting the collection, artists, visit planning, ticketing, and other app flows.",
+      "result": "The result was an interactive high-fidelity prototype with a cohesive visual identity and structured flows designed to make discovering artworks, artists, and gallery information clearer, smoother, and more intuitive."
     }
   }
 }

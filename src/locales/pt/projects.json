@@ -124,6 +124,17 @@
       "skills": "Social Media Design, Canva, Edição de Vídeo",
       "process": "O processo começou com a definição do público, do tom de voz e dos principais temas de conteúdo, como adoção, cuidados com os animais e conscientização. Em seguida, desenvolvi a identidade visual das publicações e criei peças para posts e stories, combinando cores, tipografia, imagens e elementos gráficos para transmitir proximidade, confiança e sensibilidade.",
       "result": "O resultado foi uma série conceitual de conteúdos coesa e adaptável a diferentes formatos, demonstrando como o design pode tornar a comunicação de um abrigo de animais mais clara, humana e convidativa."
+    },
+    "appGaleriaArtte": {
+      "title": "Aplicativo Galeria Artte",
+      "shortDescription": "Protótipo de aplicativo móvel criado para facilitar a exploração do acervo e o planejamento da visita a uma galeria de arte fictícia.",
+      "fullDescription": "Desenvolvi o aplicativo da Galeria Artte como parte das atividades do Certificado Profissional Google UX Design. A proposta foi reunir em uma única experiência as informações essenciais de uma galeria fictícia, permitindo que visitantes conhecessem o acervo e os artistas, consultassem localização e horários e acessassem informações sobre ingressos. O projeto também explora recursos como QR Code, atividades educativas e fluxo de compra de obras.",
+      "client": "Projeto Acadêmico — Google UX Design",
+      "role": "UX/UI Designer",
+      "timeline": "2023",
+      "skills": "UX/UI Design, Arquitetura da Informação, Wireframes, Prototipação, Figma",
+      "process": "O processo começou com esboços feitos à mão para explorar a estrutura das telas e os principais fluxos de navegação. Essas ideias evoluíram para wireframes e um protótipo de baixa fidelidade, que ajudaram a organizar o conteúdo e as funcionalidades. Em seguida, desenvolvi no Figma a identidade visual, os componentes e o protótipo de alta fidelidade, conectando os fluxos de acervo, artistas, visita, ingressos e demais recursos do aplicativo.",
+      "result": "O resultado foi um protótipo de alta fidelidade navegável, com identidade visual coesa e fluxos organizados para tornar a descoberta de obras, artistas e informações da galeria mais clara, fluida e intuitiva."
     }
   }
 }

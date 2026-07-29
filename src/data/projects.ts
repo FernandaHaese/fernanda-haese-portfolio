@@ -150,6 +150,21 @@ export const projects: Project[] = [
       "/images/projects/social-media-anjinhos-de-patas/imagem-03.png",
     ],
   },
+  {
+    slug: "app-galeria-artte",
+    translationKey: "appGaleriaArtte",
+    categories: ["ux-ui"],
+    thumbnail: "/images/projects/app-galeria-artte/imagem-04.png",
+    gallery: [
+      "/images/projects/app-galeria-artte/imagem-04.png",
+      "/images/projects/app-galeria-artte/imagem-05.png",
+      "/images/projects/app-galeria-artte/imagem-06.png",
+    ],
+    process: [
+      "/images/projects/app-galeria-artte/imagem-01.png",
+      "/images/projects/app-galeria-artte/imagem-02.png",
+    ],
+  },
 ];
 
 const categories: ProjectCategory[] = [

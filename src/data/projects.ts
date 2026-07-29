@@ -122,7 +122,7 @@ export const projects: Project[] = [
     slug: "papero-social-media",
     translationKey: "paperoSocialMedia",
     categories: ["social-media"],
-    thumbnail: "/images/projects/social-media-papero/imagem-02.png",
+    thumbnail: "/images/projects/social-media-papero/imagem-01.png",
     gallery: [
       "/images/projects/social-media-papero/imagem-01.png",
       "/images/projects/social-media-papero/imagem-02.png",

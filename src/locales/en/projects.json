@@ -80,6 +80,50 @@
       "skills": "UX/UI Design, Prototyping, GPTMaker, Figma",
       "process": "We analyzed the beauty and skincare customer journey and identified opportunities for personalization. We then mapped usage scenarios and conversational flows, designed the chatbot’s interfaces and interactions in Figma, and implemented a functional prototype in GPTMaker to validate the concept in practice.",
       "result": "The result was a functional prototype demonstrating how artificial intelligence, personalization, and conversational design can make product discovery more relevant and engaging."
+    },
+    "ekovitraSocialMedia": {
+      "title": "Ekovitra: Social Media",
+      "shortDescription": "Social media content for Ekovitra that makes sustainable construction topics more accessible while reinforcing the brand’s digital identity.",
+      "fullDescription": "After developing Ekovitra’s corporate website, I extended the brand’s digital presence to social media. The goal was to turn technical topics related to sustainable construction, EPS, and industrialized building systems into clear, engaging, and visually consistent content. I created educational and corporate assets aligned with the identity established for the website, helping communicate the company’s solutions to audiences in the Brazilian state of Amazonas.",
+      "client": "Ekovitra",
+      "role": "Social Media Designer",
+      "timeline": "2026",
+      "skills": "Social Media Design, Canva, Video Editing",
+      "process": "The process began by defining content pillars focused on audience education, frequently asked questions, and the benefits of sustainable construction. Based on research into topics such as EPS, raft foundations, thermal comfort, and industrialized construction, I organized the information, established visual hierarchies, and developed posts, carousels, and video content using accessible language and clear calls to action.",
+      "result": "The result was a cohesive content system aligned with Ekovitra’s website, making technical subjects easier to understand and strengthening the company’s positioning as a sustainable construction specialist in Amazonas."
+    },
+    "paperoSocialMedia": {
+      "title": "Papero: Social Media",
+      "shortDescription": "Content created to showcase Papero’s personalized stationery products and build a creative, approachable, and consistent digital presence.",
+      "fullDescription": "I developed social media content for Papero, my personalized stationery brand. The goal was to present the products in an engaging way, highlight the range of customization options, and communicate the care behind each piece. The project combined product photography, graphic layouts, and informative content to showcase themed collections, party favors, celebration items, and the ordering process.",
+      "client": "Papero — Own Brand",
+      "role": "Founder & Social Media Designer",
+      "timeline": "2026",
+      "skills": "Social Media Design, Product Photography, Canva, Video Editing",
+      "process": "I structured the content around product showcases, party inspiration, customization options, and guidance on how to place an order. I produced and selected photographs, developed visual compositions, and created static posts, carousels, and short-form videos while maintaining a playful, colorful language consistent with the brand’s handmade personality.",
+      "result": "The result was a visually consistent feed bringing together real products, different themes, and purchasing information while clearly presenting Papero’s variety and its thoughtful, personalized character."
+    },
+    "nathSocialMedia": {
+      "title": "Nathielli Moreira: Social Media",
+      "shortDescription": "Content for the social media of French teacher Nathielli Moreira, aimed at strengthening her digital presence and engaging potential students.",
+      "fullDescription": "I developed visual content for the social media of French teacher Nathielli Moreira. The goal was to create a consistent digital presence that conveyed professionalism, approachability, and engagement with potential students. The proposal involved creating posts and stories that reflected the teacher’s identity and facilitated communication with her target audience.",
+      "client": "Teacher Nathielli Moreira",
+      "role": "Social Media Designer",
+      "timeline": "2024",
+      "skills": "Social Media Design, Canva, Video Editing",
+      "process": "The process involved analyzing the target audience, reviewing the visual identity, and creating visual content for posts and stories. Graphic elements, typography, and colors were used to reflect the teacher’s personality and facilitate communication with her followers.",
+      "result": "The result was a stronger and more engaging digital presence for the teacher, with consistent visual content that helped attract and maintain the interest of potential students."
+    },
+    "abrigoAnimalSocialMedia": {
+      "title": "Animal Shelter: Social Media",
+      "shortDescription": "A conceptual social media content project created for a fictional animal shelter, focused on responsible adoption, awareness, and welcoming communication.",
+      "fullDescription": "I created Anjinhos de Patas Animal Shelter as a personal project and Social Media Design study. The goal was to develop a digital presence that could introduce animals available for adoption, share relevant information, and connect the shelter with potential adopters through clear, welcoming, and visually consistent communication. The project included defining the visual direction and creating content for posts and stories.",
+      "client": "Personal / Conceptual Project",
+      "role": "Social Media Designer",
+      "timeline": "2024",
+      "skills": "Social Media Design, Canva, Video Editing",
+      "process": "The process began by defining the audience, tone of voice, and main content themes, including adoption, animal care, and awareness. I then developed the visual identity for the publications and created assets for posts and stories, combining color, typography, imagery, and graphic elements to convey warmth, trust, and sensitivity.",
+      "result": "The result was a cohesive conceptual content series adaptable to different formats, demonstrating how design can make an animal shelter’s communication clearer, more human, and more inviting."
     }
   }
 }

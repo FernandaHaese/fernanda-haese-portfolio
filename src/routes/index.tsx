@@ -37,13 +37,11 @@ export const Route = createFileRoute("/")({
 
 function Home() {
   const { t, i18n } = useTranslation(["home", "common"]);
-  const featured = projects.slice(0, 6);
   const finisherInitialized = useRef(false);
   const [filter, setFilter] = useState<"all" | ProjectCategory>("all");
-  const [visible, setVisible] = useState(6);
 
   const filtered = projects.filter((p) => filter === "all" || p.categories.includes(filter));
-  const shown = filtered.slice(0, visible);
+  const shown = filtered.slice(0, 6);
 
   useEffect(() => {
     if (finisherInitialized.current) return;
@@ -208,10 +206,7 @@ function Home() {
                     type="button"
                     role="tab"
                     aria-selected={active}
-                    onClick={() => {
-                      setFilter(cat);
-                      setVisible(6);
-                    }}
+                    onClick={() => setFilter(cat)}
                     className={cn(
                       "btn-hard btn-hard-hover px-3 sm:px-4 py-1.5 text-sm font-semibold min-h-9",
                       active ? "bg-lilac" : "bg-card",
@@ -246,17 +241,6 @@ function Home() {
             )}
           </div>
 
-          {visible < filtered.length && (
-            <div className="mt-10 flex justify-center">
-              <button
-                type="button"
-                onClick={() => setVisible((v) => v + 6)}
-                className="btn-hard btn-hard-hover bg-card px-5 py-2.5 font-semibold min-h-11"
-              >
-                {t("portfolio:viewMore")}
-              </button>
-            </div>
-          )}
           <div className="mt-10 flex justify-center">
             <Link
               to="/portfolio"

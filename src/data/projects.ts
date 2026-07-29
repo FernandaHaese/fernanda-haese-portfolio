@@ -71,7 +71,7 @@ export const projects: Project[] = [
     slug: "app-memorio",
     translationKey: "memorioApp",
     categories: ["ux-ui"],
-    thumbnail: "/images/projects/aplicativo-memorio/imagem-2.webp",
+    thumbnail: "/images/projects/aplicativo-memorio/imagem-5.webp",
     gallery: [
       "/images/projects/aplicativo-memorio/imagem-3.webp",
       "/images/projects/aplicativo-memorio/imagem-2.webp",
@@ -107,14 +107,63 @@ export const projects: Project[] = [
     ],
     liveUrl: "https://fernandahaese.github.io/Projeto-Natura/",
   },
+  {
+    slug: "ekovitra-social-media",
+    translationKey: "ekovitraSocialMedia",
+    categories: ["social-media"],
+    thumbnail: "/images/projects/social-media-ekovitra/imagem-03.png",
+    gallery: [
+      "/images/projects/social-media-ekovitra/imagem-01.png",
+      "/images/projects/social-media-ekovitra/imagem-02.png",
+      "/images/projects/social-media-ekovitra/imagem-03.png",
+    ],
+  },
+  {
+    slug: "papero-social-media",
+    translationKey: "paperoSocialMedia",
+    categories: ["social-media"],
+    thumbnail: "/images/projects/social-media-papero/imagem-02.png",
+    gallery: [
+      "/images/projects/social-media-papero/imagem-01.png",
+      "/images/projects/social-media-papero/imagem-02.png",
+      "/images/projects/social-media-papero/imagem-03.png",
+    ],
+  },
+  {
+    slug: "nath-social-media",
+    translationKey: "nathSocialMedia",
+    categories: ["social-media"],
+    thumbnail: "/images/projects/social-media-nath/imagem-02.png",
+    gallery: [
+      "/images/projects/social-media-nath/imagem-01.png",
+      "/images/projects/social-media-nath/imagem-02.png",
+    ],
+  },
+  {
+    slug: "abrigo-animal-social-media",
+    translationKey: "abrigoAnimalSocialMedia",
+    categories: ["social-media"],
+    thumbnail: "/images/projects/social-media-anjinhos-de-patas/imagem-01.png",
+    gallery: [
+      "/images/projects/social-media-anjinhos-de-patas/imagem-01.png",
+      "/images/projects/social-media-anjinhos-de-patas/imagem-02.png",
+      "/images/projects/social-media-anjinhos-de-patas/imagem-03.png",
+    ],
+  },
 ];
 
-export const projectCategories: ("all" | ProjectCategory)[] = [
-  "all",
+const categories: ProjectCategory[] = [
   "ux-ui",
   "web-design",
   "front-end",
   "brand",
   "social-media",
   "other",
+];
+
+export const projectCategories: ("all" | ProjectCategory)[] = [
+  "all",
+  ...categories.filter((category) =>
+    projects.some((project) => project.categories.includes(category)),
+  ),
 ];

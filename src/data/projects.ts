@@ -1,5 +1,5 @@
 export type ProjectCategory =
-  "ux-ui" | "web-design" | "app" | "brand" | "social-media" | "presentation" | "other";
+  "ux-ui" | "web-design" | "app" | "social-media" | "brand" | "presentation" | "other";
 
 export type Project = {
   slug: string;
@@ -213,8 +213,8 @@ const categories: ProjectCategory[] = [
   "ux-ui",
   "web-design",
   "app",
-  "brand",
   "social-media",
+  "brand",
   "presentation",
   "other",
 ];

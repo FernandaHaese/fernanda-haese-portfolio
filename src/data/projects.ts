@@ -1,5 +1,5 @@
 export type ProjectCategory =
-  "ux-ui" | "web-design" | "front-end" | "brand" | "social-media" | "other";
+  "ux-ui" | "web-design" | "app" | "brand" | "social-media" | "presentation" | "other";
 
 export type Project = {
   slug: string;
@@ -16,7 +16,7 @@ export const projects: Project[] = [
   {
     slug: "brotai-platform",
     translationKey: "brotaiPlatform",
-    categories: ["ux-ui", "front-end"],
+    categories: ["ux-ui"],
     thumbnail: "/images/projects/plataforma-brotai/imagem-8.webp",
     gallery: [
       "/images/projects/plataforma-brotai/imagem-8.webp",
@@ -36,7 +36,7 @@ export const projects: Project[] = [
   {
     slug: "website-ekovitra",
     translationKey: "websiteEkovitra",
-    categories: ["ux-ui", "web-design", "front-end"],
+    categories: ["ux-ui", "web-design"],
     thumbnail: "/images/projects/website-ekovitra/imagem-6.webp",
     gallery: [
       "/images/projects/website-ekovitra/imagem-6.webp",
@@ -54,7 +54,7 @@ export const projects: Project[] = [
   {
     slug: "sensen-games-website",
     translationKey: "sensenGamesWebsite",
-    categories: ["ux-ui", "front-end", "web-design"],
+    categories: ["ux-ui", "web-design"],
     thumbnail: "/images/projects/website-sensen-games/imagem-1.webp",
     gallery: [
       "/images/projects/website-sensen-games/imagem-1.webp",
@@ -70,7 +70,7 @@ export const projects: Project[] = [
   {
     slug: "app-memorio",
     translationKey: "memorioApp",
-    categories: ["ux-ui"],
+    categories: ["ux-ui", "app"],
     thumbnail: "/images/projects/aplicativo-memorio/imagem-5.webp",
     gallery: [
       "/images/projects/aplicativo-memorio/imagem-3.webp",
@@ -82,7 +82,7 @@ export const projects: Project[] = [
   {
     slug: "helena-duarte-website",
     translationKey: "helenaDuarteWebsite",
-    categories: ["web-design", "ux-ui", "front-end"],
+    categories: ["web-design", "ux-ui"],
     thumbnail: "/images/projects/website-helena-duarte/imagem-4.webp",
     gallery: [
       "/images/projects/website-helena-duarte/imagem-4.webp",
@@ -153,7 +153,7 @@ export const projects: Project[] = [
   {
     slug: "app-galeria-artte",
     translationKey: "appGaleriaArtte",
-    categories: ["ux-ui"],
+    categories: ["ux-ui", "app"],
     thumbnail: "/images/projects/app-galeria-artte/imagem-04.png",
     gallery: [
       "/images/projects/app-galeria-artte/imagem-04.png",
@@ -170,9 +170,10 @@ export const projects: Project[] = [
 const categories: ProjectCategory[] = [
   "ux-ui",
   "web-design",
-  "front-end",
+  "app",
   "brand",
   "social-media",
+  "presentation",
   "other",
 ];
 

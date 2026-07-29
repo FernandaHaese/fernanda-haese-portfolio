@@ -9,9 +9,10 @@
     "all": "Todos",
     "ux-ui": "UX/UI",
     "web-design": "Web",
-    "front-end": "Front-End",
+    "app": "App",
     "brand": "Id. Visual",
     "social-media": "Mídias Sociais",
+    "presentation": "Apresentação",
     "other": "Outro"
   },
   "empty": "Nenhum projeto para este filtro ainda.",

@@ -9,9 +9,10 @@
     "all": "All",
     "ux-ui": "UX/UI",
     "web-design": "Web",
-    "front-end": "Front-end",
+    "app": "App",
     "brand": "Visual Identity",
     "social-media": "Social Media",
+    "presentation": "Presentation",
     "other": "Other"
   },
   "empty": "No projects match this filter yet.",
